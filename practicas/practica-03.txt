@@ -1,0 +1,15 @@
+X:1
+T:Felices vamos
+M:4/4
+L: 1/4
+Q: 1/4=120
+V: Der
+%%MIDI program 0
+K:C clef=treble
+EDCD|EEE2|DDD2|EGG2|
+EDCD|EEE2|DDED|C4|
+V: Izq
+%%MIDI program 1
+K:C clef=bass
+[G,E,C,]4|[G,E,C,]4|[G,F,B,,]4|[G,E,C,]4|
+[G,E,C,]4|[G,E,C,]4|[G,F,B,,]4|[G,E,C,]4|
