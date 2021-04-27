@@ -1,0 +1,16 @@
+X: 1
+T: Star Wars Main Theme
+C: John Williams
+M: 4/4
+L: 1/8
+Q: 1/4=120
+K: G
+V: Der
+%%MIDI program 0
+(3DDD | G4 d4 | (3c BA g4 d2 |
+(3cBA g4 d2 | (3cBc A4 :|D>D |
+E3E cBAG | (3GAB AE F2 D>D |
+E4E cBAG | d2 A4 D>D |
+E3E cBAG | (3GAB AE F2 d>d |
+(3:2:2g2=f (3:2:2_e2d (3:2:2c2_B (3:2:2A2G |
+d6 DDD | d8 |]

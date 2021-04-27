@@ -1,0 +1,32 @@
+{
+    "Practicas": [
+        {
+            "titulo": "Ejercicio Nº 1",
+            "file": "practica-01.txt"
+        },
+        {
+            "titulo": "Ejercicio Nº 2",
+            "file": "practica-01.txt"
+        },
+        {
+            "titulo": "Practica 3",
+            "file": "practica-03.txt"
+        },
+        {
+            "titulo": "Practica 4",
+            "file": "practica-04.txt"
+        },
+        {
+            "titulo": "Practica 5",
+            "file": "practica-05.txt"
+        },
+        {
+            "titulo": "Felices vamos",
+            "file": "Felices-vamos.txt"
+        },
+        {
+            "titulo": "Star Wars Main Theme",
+            "file": "Star-Wars-Main-Theme.txt"
+        }
+    ]
+}
