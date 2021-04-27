@@ -343,6 +343,7 @@
 			} else {
 				document.querySelector("#audio").innerHTML = "<div class='audio-error'>Audio is not supported in this browser.</div>";
 			}
+			cargaPractica(1);
 			setTune(false);
 			connect();
 		}
@@ -357,9 +358,9 @@
 				synthControl.play();
 		}
 
-		function setTune(userAction) {
+		function setTune(userAction, abcText) {
 			synthControl.disable(true);
-			var visualObj = ABCJS.renderAbc("paper", abc[currentTune], abcOptions)[0];
+			var visualObj = ABCJS.renderAbc("paper", abcText, abcOptions)[0];
 			// TODO-PER: This will allow the callback function to have access to timing info - this should be incorporated into the render at some point.
 			var midiBuffer = new ABCJS.synth.CreateSynth();
 			midiBuffer.init({
@@ -392,17 +393,23 @@
 			});
 		}
 
+		function cargaPractica(numero) {
+			fetch('practicas/practica-0' + numero + '.txt')
+  				.then(response => response.text())
+  				.then(text => setTune(true,text));
+		}
+
 		function siguiente() {
 			currentTune++;
-			if (currentTune >= abc.length)
-				currentTune = 0;
-			setTune(true);
+			if (currentTune > 3)
+				currentTune = 1;
+			cargaPractica(currentTune);
 		}
 
 		function anterior() {
-			if (currentTune > 0)
+			if (currentTune > 1)
 				currentTune--;
-			setTune(true);
+			cargaPractica(currentTune);
 		}
 
 
