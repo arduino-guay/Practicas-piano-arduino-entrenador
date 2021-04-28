@@ -309,7 +309,7 @@
 		}
 
 		function cargaPractica(file) {
-			fetch(file)
+			fetch('practicas/' + file)
   				.then(response => response.text())
   				.then(text => setTune(true,text));
 		}
