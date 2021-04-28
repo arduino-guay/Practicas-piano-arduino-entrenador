@@ -237,7 +237,6 @@
 				document.querySelector("#audio").innerHTML = "<div class='audio-error'>Audio is not supported in this browser.</div>";
 			}
 			cargaTitulos();
-			cargaPractica(1);
 			setTune(false);
 			connect();
 		}
@@ -305,6 +304,7 @@
   				.then(jsonResponse => {
 					canciones = jsonResponse.Practicas; 
 					cargaCombo();	
+					cargaPractica(canciones[0].file);
 				  });
 		}
 
