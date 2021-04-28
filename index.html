@@ -294,6 +294,11 @@
   			})
 		}	
 
+		function cambiaCancion() {
+			var ele = document.getElementById('canciones');
+			cargaPractica(ele.value);
+		}
+
 		function cargaTitulos() {
 			fetch('practicas/practicas.json')
   				.then(response => response.json())
@@ -303,8 +308,8 @@
 				  });
 		}
 
-		function cargaPractica(numero) {
-			fetch('practicas/practica-0' + numero + '.txt')
+		function cargaPractica(file) {
+			fetch(file)
   				.then(response => response.text())
   				.then(text => setTune(true,text));
 		}
@@ -332,7 +337,7 @@
 	</header>
 	<div class="container">
 		<main>
-			<select id="canciones">
+			<select id="canciones" onchange="cambiaCancion()">
 		 	</select>
 			<button class="next">Siguiente</button>
 			<button class="previus">Anterior</button>
