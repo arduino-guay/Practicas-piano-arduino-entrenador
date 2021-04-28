@@ -1,0 +1,15 @@
+X:1
+T:La viejita
+M:4/4
+L: 1/4
+Q: 1/4=120
+V: Der
+%%MIDI program 0
+K:C clef=treble
+G2EC|G2EC|EEEG|C4|
+G2EC|G2EC|EEEG|C4|
+V: Izq
+%%MIDI program 1
+K:C clef=bass
+[G,E,C,]4|[G,E,C,]4|[G,F,B,,]4|[G,E,C,]4|
+[G,E,C,]4|[G,E,C,]4|[G,F,B,,]4|[G,E,C,]4|
