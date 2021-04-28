@@ -27,6 +27,14 @@
         {
             "titulo": "Star Wars Main Theme",
             "file": "Star-Wars-Main-Theme.txt"
+        },
+        {
+            "titulo": "El lago de los cisnes",
+            "file": "El-lago-de-los-cisnes.txt"
+        },
+        {
+            "titulo": "La viejita",
+            "file": "La-viejita.txt"
         }
     ]
 }
