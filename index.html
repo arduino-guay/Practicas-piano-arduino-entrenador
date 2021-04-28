@@ -287,11 +287,19 @@
 			});
 		}
 
+		function cargaCombo() {
+ 			var ele = document.getElementById('canciones');
+  			canciones.forEach(function(b) {
+    			ele.innerHTML += '<option value="' + b.file + '">' + b.titulo + '</option>';
+  			})
+		}	
+
 		function cargaTitulos() {
 			fetch('practicas/practicas.json')
   				.then(response => response.json())
   				.then(jsonResponse => {
-					canciones = jsonResponse.Practicas; 	
+					canciones = jsonResponse.Practicas; 
+					cargaCombo();	
 				  });
 		}
 
@@ -324,6 +332,8 @@
 	</header>
 	<div class="container">
 		<main>
+			<select id="canciones">
+		 	</select>
 			<button class="next">Siguiente</button>
 			<button class="previus">Anterior</button>
 			<button class="start">Arrancar/Parar</button>
