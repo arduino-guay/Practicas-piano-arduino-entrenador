@@ -193,55 +193,9 @@
 
 		var cursorControl = new CursorControl();
 
-		var abc = [
-			/*
-			"T: Cooley's\n" +
-			"M: 4/4\n" +
-			"Q: 1/4=120\n" +
-			"L: 1/8\n" +
-			"R: reel\n" +
-			"K: Emin\n" +
-			"|:{E}D2|EB{c}BA B2 EB|~B2 AB dBAG|FDAD BDAD|FDAD dAFD|\n" +
-			"EBBA B2 EB|B2 AB defg|afe^c dBAF|DEFD E2:|\n" +
-			"|:gf|eB B2 efge|eB B2 gedB|A2 FA DAFA|A2 FA defg|\n" +
-			"eB B2 eBgB|eB B2 defg|afe^c dBAF|DEFD E2:|",
-			*/
-			
-			"X:1\n" +
-			"T:Practica 1\n" +
-			"M:4/4\n" +
-			"L: 1/4\n" +
-			"Q: 1/4=60\n" +
-			"V: Der\n" +
-			"%%MIDI program 0\n" +
-			"K:C clef=treble\n" +
-			" cdef | gfed | cdef | gfed | c z3 \n" +
-			"V: Izq\n" +
-			"%%MIDI program 1\n" +
-			"K:C clef=treble\n" +
-			"  B2A2 | G2F2 | E2F2 | G2A2 | B2 z2 ",
-
-			"X:1\n" +
-			"T:Practica 2\n" +
-			"M:4/4\n" +
-			"L: 1/4\n" +
-			"Q: 1/4=60\n" +
-			"V: Der\n" +
-			"%%MIDI program 0\n" +
-			"K:C clef=treble\n" +
-			" c2d2 | e2f2 | g2f2 | e2d2 | c2z2 \n" +
-			"V: Izq\n" +
-			"%%MIDI program 1\n" +
-			"K:C clef=treble\n" +
-			"  BAGF | EFGA | BAGF | EFGA | B z3 "
-
-
-
-
-		];
-
+		var abc = [];
 		var tuneNames = ["Cooleys", "Bill Bailey", "All Notes On Piano"];
-
+		var canciones;
 		var currentTune = 0;
 
 		var synthControl;
@@ -330,6 +284,14 @@
 			}).catch(function (error) {
 				console.warn("Audio problem:", error);
 			});
+		}
+
+		function cargaTitulos() {
+			fetch('practicas/practicas.json')
+  				.then(response => response.json())
+  				.then(jsonResponse => {
+					canciones = jsonResponse.Practicas; 	
+				  });
 		}
 
 		function cargaPractica(numero) {
