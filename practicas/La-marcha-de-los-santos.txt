@@ -1,0 +1,20 @@
+%abc-2.1
+X:1
+T:La marcha de lso santos
+M:4/4
+L: 1/4
+Q: 1/4=120
+V: Der
+%%MIDI program 0
+K:C clef=treble
+CEF | (G4 | G)CEF | (G4 | 
+G) CEF | G2E2 | C2E2 | (D4 | 
+D2)ED | C3 C | E2 GG | G (F3 | 
+F2) EF | G2E2 | D2E2 | (C4 | C :|
+V: Izq
+K:C clef=bass
+%%MIDI program 1
+z1z2 | z1 [C,E,G,][C,E,G,][C,E,G,] | [C,E,G,] z1 z2 | z1 [C,E,G,][C,E,G,][C,E,G,] |
+[C,E,G,] z1 z2 | [C,E,G,]2 z2 | [C,E,G,]2 z2 | z1 [G,F,B,,][G,F,B,,][G,F,B,,] |
+[G,F,B,,] z1 z2 | [C,E,G,]2 z2 | [C,E,G,]2 z2 | z2 F,2 | 
+F,2 z2 | [C,E,G,]2 z2 | [G,F,B,,]2 z2 | z1 [C,E,G,][C,E,G,][C,E,G,] | [C,E,G,] :|

@@ -35,6 +35,14 @@
         {
             "titulo": "La viejita",
             "file": "La-viejita.txt"
+        },
+        {
+            "titulo": "A remar",
+            "file": "A-remar.txt"
+        },
+        {
+            "titulo": "La marcha de los santos",
+            "file": "La-marcha-de-los-santos.txt"
         }
     ]
 }
