@@ -255,6 +255,9 @@
 		}
 
 		function setTune(userAction, abcText) {
+			if ( !abcText ) {
+				return;
+			}
 			let partes = abcText.splilt('V:');
 			let cancion = partes[0];
 			if ( chkDer.checked ) {
