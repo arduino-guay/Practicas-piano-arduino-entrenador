@@ -7,8 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="css/examples-styles.css" />
-
-	<title>abcjs: Synth Demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	
+	<title>Arduino-Guay Piano</title>
 
 	<link rel="stylesheet" type="text/css" href="css/abcjs-audio.css">
 	<style>
@@ -59,6 +60,7 @@
 	<script type="text/javascript">
 		var hayMidi = false;
 		var midiOut = [];
+		var chkDer, chkIzq;
 
 		function connect() {
 			navigator.requestMIDIAccess()
@@ -229,6 +231,8 @@
 			document.querySelector(".next").addEventListener("click", siguiente);
 			document.querySelector(".previus").addEventListener("click", anterior);
 			document.querySelector(".start").addEventListener("click", start);
+			chkDer = document.getElementById("chDerecha");
+			chkIzq = document.getElementById("chizquierda");
 
 			if (ABCJS.synth.supportsAudio()) {
 				synthControl = new ABCJS.synth.SynthController();
@@ -251,8 +255,17 @@
 		}
 
 		function setTune(userAction, abcText) {
+			let partes = abcText.splilt('V:');
+			let cancion = partes[0];
+			if ( chkDer.checked ) {
+				cancion += 'V:' + partes[1];
+			} 
+			if ( chkIzq.checked && (partes.length > 2)) {
+				cancion += 'V:' + partes[2];
+			} 
+
 			synthControl.disable(true);
-			var visualObj = ABCJS.renderAbc("paper", abcText, abcOptions)[0];
+			var visualObj = ABCJS.renderAbc("paper", cancion, abcOptions)[0];
 			// TODO-PER: This will allow the callback function to have access to timing info - this should be incorporated into the render at some point.
 			var midiBuffer = new ABCJS.synth.CreateSynth();
 			midiBuffer.init({
@@ -260,7 +273,7 @@
 				visualObj: visualObj,
 				// sequence: [],
 				// millisecondsPerMeasure: 1000,
-				 debugCallback: function(message) { console.log(message) },
+				// debugCallback: function(message) { console.log(message) },
 				options: {
 					// soundFontUrl: "https://paulrosen.github.io/midi-js-soundfonts/FluidR3_GM/" ,
 					// sequenceCallback: function(noteMapTracks, callbackContext) { return noteMapTracks; },
@@ -336,11 +349,23 @@
 	</header>
 	<div class="container">
 		<main>
-			<select id="canciones" onchange="cambiaCancion()">
+			<select class="form-select"  id="canciones" onchange="cambiaCancion()">
 		 	</select>
-			<button class="next">Siguiente</button>
-			<button class="previus">Anterior</button>
-			<button class="start">Arrancar/Parar</button>
+			<button type="button" class="next btn btn-primary">Siguiente</button>
+			<button type="button" class="previus btn btn-primary">Anterior</button>
+			<button type="button" class="start btn btn-primary">Arrancar/Parar</button>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="chkDerecha" checked onchange="cambiaCancion()">
+				<label class="form-check-label" for="flexCheckDefault">
+				  Mano Izquierda
+				</label>
+			</div>
+			<div class="form-check">				
+				<input class="form-check-input" type="checkbox" value="" id="chkIzquierda" checked onchange="cambiaCancion()">
+				<label class="form-check-label" for="flexCheckChecked">
+				  Mano Derecha
+				</label>
+			  </div>			
 			<div id="paper"></div>
 			<div id="audio"></div>
 			<p class="beat"></p>

@@ -21,10 +21,6 @@ header {
   margin-bottom: 30px;
 }
 
-.container {
-  max-width: 700px;
-}
-
 main {
   padding: 0;
 }
@@ -85,21 +81,6 @@ p {
 
 input {
   font-size: 1em;
-}
-
-button {
-  margin: 0 4px;
-  padding: 5px 10px;
-  font-size: inherit;
-  background: #e2fdf1;
-  border: 1px solid #5c5c5c;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #3FB07C;
-  color: white;
-  border-color: #3FB07C;
 }
 
 .visible-background svg {
