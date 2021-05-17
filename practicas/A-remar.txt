@@ -13,7 +13,7 @@ GEE2 | FDD2 | CDEF | C4 |
 V: Izq
 K:C clef=bass
 %%MIDI program 1
-[C,E,G,]2z2 | [G,F,B,,]2z2 | ([C,(E,(G,]4 | [G,)E,)C,]4) | 
+!pp![C,E,G,]2z2 | [G,F,B,,]2z2 | ([C,(E,(G,]4 | [G,)E,)C,]4) | 
 [C,E,G,]2z2 | [G,F,B,,]2z2 | ([C,(E,(G,]4 | [G,)E,)C,]4) | 
 z4 | z4 | E,E,E,E, | E,F,G,2 | 
 [C,E,G,]2z2 | [G,F,B,,]2z2 | ([C,(E,(G,]4 | [G,)E,)C,]4) | 

@@ -14,7 +14,7 @@ F2) EF | G2E2 | D2E2 | (C4 | C :|
 V: Izq
 K:C clef=bass
 %%MIDI program 1
-z1z2 | z1 [C,E,G,][C,E,G,][C,E,G,] | [C,E,G,] z1 z2 | z1 [C,E,G,][C,E,G,][C,E,G,] |
+!ppp!z1z2 | z1 [C,E,G,][C,E,G,][C,E,G,] | [C,E,G,] z1 z2 | z1 [C,E,G,][C,E,G,][C,E,G,] |
 [C,E,G,] z1 z2 | [C,E,G,]2 z2 | [C,E,G,]2 z2 | z1 [G,F,B,,][G,F,B,,][G,F,B,,] |
 [G,F,B,,] z1 z2 | [C,E,G,]2 z2 | [C,E,G,]2 z2 | z2 F,2 | 
 F,2 z2 | [C,E,G,]2 z2 | [G,F,B,,]2 z2 | z1 [C,E,G,][C,E,G,][C,E,G,] | [C,E,G,] :|

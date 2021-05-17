@@ -7,9 +7,9 @@ V: Der
 %%MIDI program 0
 K:C clef=treble
 e4|ABcd|e3c|e3c|
-e3A|cAFc|(A4|A)dcB|
+e3A|cAFc|A4-|AdcB|
 e4|ABcd|e3c|e3c|
-e3A|cAFc|(A4|A2)A2|
+e3A|cAFc|A4-|A2A2|
 B2c2|d2ef|g3f|e2fg|
 a3g|f2ga|b3a|ecBA|
 B2c2|d2ef|g3f|e2fg|
