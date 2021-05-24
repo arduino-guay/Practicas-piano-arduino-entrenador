@@ -47,6 +47,18 @@
         {
             "titulo": "pepinot",
             "file": "pepinot.txt"
+        },
+        {
+            "titulo": "Un Mundo ideal",
+            "file": "Un-mundo-ideal.txt"
+        },
+        {
+            "titulo": "Bella y bestia son",
+            "file": "bella-y-bestia-son.txt"
+        },
+        {
+            "titulo": "Piratas del Caribe",
+            "file": "piratas-del-caribe.txt"
         }
     ]
 }

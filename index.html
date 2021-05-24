@@ -199,6 +199,7 @@
 		var tuneNames = ["Cooleys", "Bill Bailey", "All Notes On Piano"];
 		var canciones;
 		var currentTune = 0;
+		var cancion;
 
 		var synthControl;
 
@@ -252,12 +253,31 @@
 				synthControl.play();
 		}
 
+		function compases ( txt, num) {
+			let tmp = txt.replace(/\n/g,'').replace(/\r/g,'').split('|');
+			let res = '';
+			let i = 0,j = 0;
+			do {
+				res += tmp[i] + '|';
+				j++; i++;
+				if ( j == num  ) {
+					j = 0;
+					res += '\n';
+				}
+			} while (i < tmp.length);
+			return res;
+		}
+
 		function setTune(userAction, abcText) {
 			if ( !abcText ) {
 				return;
 			}
+			let tmp = abcText.split('%-');
+			if ( tmp.length > 1  ) {
+				abcText = tmp[0] + compases(tmp[1],6) + tmp[2]+ compases(tmp[3],6);
+			}	
 			let partes = abcText.split('V:');
-			let cancion = partes[0];
+			cancion = partes[0];
 			if ( chkDer.checked ) {
 				cancion += 'V:' + partes[1];
 			} 
