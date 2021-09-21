@@ -7,7 +7,7 @@ Q:1/2=60
 V:DER
 %%MIDI program 0
 K:C clef=treble
-GEDC | GEDC | FEDC | GEDC 
+GEDC | GEDC | FEDC | CDEG 
 GCDC | GCDC | GCDC | GCDC
 CDEG | CDEG | CDEF | CDEG 
 GDEC | GDEC | GDEC | GDEC 
