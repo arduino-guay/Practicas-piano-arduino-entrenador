@@ -61,6 +61,7 @@
 		var hayMidi = false;
 		var midiOut = [];
 		var chkDer, chkIzq;
+		var timer;
 
 		function connect() {
 			navigator.requestMIDIAccess()
@@ -91,8 +92,14 @@
 			let cmd = '' + (on ? 1 : 0) + nota;
 			if (on == 1) {
 				midiOut[0].send([0x90 + instrumento, nota, 127]);
+				if (midiOut[1]) {
+					midiOut[1].send([0x90 + instrumento, nota, 20]);
+				}
 			} else {
 				midiOut[0].send([0x90 + instrumento, nota, 0]);
+				if (midiOut[1]) {
+					midiOut[1].send([0x90 + instrumento, nota, 0]);
+				}
 			}
 		}
 
@@ -114,6 +121,10 @@
 				// TODO Enceder nota
 			}
 
+			setMsMedida(ms) {
+				this.msBPM = ms;
+			}
+
 			setTic(bpm) {
 				this.msBPM = 60000 / bpm;
 				console.log('BPM = ' + this.msBPM + ' ms');
@@ -122,10 +133,9 @@
 		}
 
 		function CursorControl() {
-			var timer = new TimerNotas();
-			timer.setTic(120);
 			t0 = Date.now();
 			var self = this;
+			timer = new TimerNotas();
 
 			self.onStart = function () {
 				var svg = document.querySelector("#paper svg");
@@ -287,6 +297,7 @@
 
 			synthControl.disable(true);
 			var visualObj = ABCJS.renderAbc("paper", cancion, abcOptions)[0];
+			timer.setMsMedida(visualObj.millisecondsPerMeasure());
 			// TODO-PER: This will allow the callback function to have access to timing info - this should be incorporated into the render at some point.
 			var midiBuffer = new ABCJS.synth.CreateSynth();
 			midiBuffer.init({
@@ -306,7 +317,7 @@
 				console.log(response);
 				if (synthControl) {
 					let options = {
-						//drum : "dddd 76 77 77 77 60 30 30 30" 
+						drum : "dddd 76 77 77 77 60 30 30 30" 
 						//drum : "dd 76 77 60 30" 
 					};
 					synthControl.setTune(visualObj, userAction, options).then(function (response) {

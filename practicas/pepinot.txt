@@ -3,7 +3,7 @@ T:Caresse sur l'océan
 C:Bruno Coulais - Christophe Barratier
 M:6/4
 L: 1/8
-Q: 1/4=98
+Q: 98
 V: Der
 %%MIDI program 0
 K:Dm clef=treble 
