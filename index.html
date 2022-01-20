@@ -96,7 +96,7 @@
 			z-index: 1;
 			text-shadow: 0px -1px 1px rgba(255, 255, 255, 0.5);
 			width: 30px;
-			height: 110px;
+			height: 95px;
 		}
 
 		.white {
@@ -105,7 +105,7 @@
 			z-index: 0;
 			text-shadow: 0px 1px 1px rgba(32, 32, 32, 0.5);
 			width: 40px;
-			height: 180px;
+			height: 150px;
 		}
 
 		.izqda {
@@ -114,6 +114,10 @@
 
 		.drcha {
 			background-color: #999feb;
+		}
+
+		.abcjs-inline-audio .abcjs-btn {
+			height: auto;
 		}
 	</style>
 
@@ -306,11 +310,12 @@
 			add_classes: true,
 			clickListener: self.clickListener,
 			responsive: "resize",
-			viewportVertical: true
+			viewportVertical: true,
+			staffwidth: 1200
 		};
 
 		function load() {
-			document.getElementById("start").addEventListener("click", start);
+			//document.getElementById("start").addEventListener("click", start);
 			chkDer = document.getElementById("chkDerecha");
 			chkIzq = document.getElementById("chkIzquierda");
 
@@ -355,7 +360,7 @@
 			}
 			let tmp = abcText.split('%-');
 			if (tmp.length > 1) {
-				abcText = tmp[0] + compases(tmp[1], 6) + tmp[2] + compases(tmp[3], 6);
+				abcText = tmp[0] + compases(tmp[1], 8) + tmp[2] + compases(tmp[3], 8);
 			}
 			let partes = abcText.split('V:');
 			cancion = partes[0];
@@ -448,217 +453,221 @@
 </head>
 
 <body onload="load()">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<span class="col-5">
-				<select class="form-select" id="canciones" onchange="cambiaCancion()">
-				</select>
-			</span>
-			<span class="col-1">
-				<button type="button" id="start" class="btn btn-primary">Arrancar/Parar</button>
-			</span>
-		</div>
-		<div class="row">
-			<span class="col-2">
-				<input class="form-check-input" type="checkbox" value="" id="chkIzquierda" checked
-					onchange="cambiaCancion()">
-				<label class="form-check-label" for="chkIzquierda">
-					Mano Izquierda
-				</label>
-			</span>
-			<span class="col-2">
-				<input class="form-check-input" type="checkbox" value="" id="chkDerecha" checked
-					onchange="cambiaCancion()">
-				<label class="form-check-label" for="chkDerecha">
-					Mano Derecha
-				</label>
-			</span>
-		</div>
-		<div style="width: 900px;margin-left: auto;margin-right: auto;">
-			<div id="paper" style="height: 500px;overflow-y: scroll;"></div>
-			<div id="audio"></div>
-			<p class="beat"></p>
-		</div>
-		<div id="keyboard" class="keyboard-holder" style="width: 1200px;">
-			<div class="white key" id="n36" style="left: 0px;">
-				<div class="label">C2</div>
+			<div class="col-2">
+				<div class="row">
+					<div class="col">
+						<select class="form-select" id="canciones" onchange="cambiaCancion()" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<input class="form-check-input" type="checkbox" value="" id="chkIzquierda" checked
+							onchange="cambiaCancion()">
+						<label class="form-check-label" for="chkIzquierda">
+							Mano Izquierda
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<input class="form-check-input" type="checkbox" value="" id="chkDerecha" checked
+							onchange="cambiaCancion()">
+						<label class="form-check-label" for="chkDerecha">
+							Mano Derecha
+						</label>
+					</div>
+				</div>
 			</div>
-			<div class="black key" id="n37" style="left: 20px;">
-				<div class="label">C2#</div>
-			</div>
-			<div class="white key" id="n38" style="left: 35px;">
-				<div class="label">D2</div>
-			</div>
-			<div class="black key" id="n39" style="left: 55px;">
-				<div class="label">D2#</div>
-			</div>
-			<div class="white key" id="n40" style="left: 70px;">
-				<div class="label">E2</div>
-			</div>
-			<div class="white key" id="n41" style="left: 105px;">
-				<div class="label">F2</div>
-			</div>
-			<div class="black key" id="n42" style="left: 125px;">
-				<div class="label">F2#</div>
-			</div>
-			<div class="white key" id="n43" style="left: 140px;">
-				<div class="label">G2</div>
-			</div>
-			<div class="black key" id="n44" style="left: 160px;">
-				<div class="label">G2#</div>
-			</div>
-			<div class="white key" id="n45" style="left: 175px;">
-				<div class="label">A2</div>
-			</div>
-			<div class="black key" id="n46" style="left: 195px;">
-				<div class="label">A2#</div>
-			</div>
-			<div class="white key" id="n47" style="left: 210px;">
-				<div class="label">B2</div>
-			</div>
-			<div class="white key" id="n48" style="left: 245px;">
-				<div class="label">C3</div>
-			</div>
-			<div class="black key" id="n49" style="left: 265px;">
-				<div class="label">C3#</div>
-			</div>
-			<div class="white key" id="n50" style="left: 280px;">
-				<div class="label">D3</div>
-			</div>
-			<div class="black key" id="n51" style="left: 300px;">
-				<div class="label">D3#</div>
-			</div>
-			<div class="white key" id="n52" style="left: 315px;">
-				<div class="label">E3</div>
-			</div>
-			<div class="white key" id="n53" style="left: 350px;">
-				<div class="label">F3</div>
-			</div>
-			<div class="black key" id="n54" style="left: 370px;">
-				<div class="label">F3#</div>
-			</div>
-			<div class="white key" id="n55" style="left: 385px;">
-				<div class="label">G3</div>
-			</div>
-			<div class="black key" id="n56" style="left: 405px;">
-				<div class="label">G3#</div>
-			</div>
-			<div class="white key" id="n57" style="left: 420px;">
-				<div class="label">A3</div>
-			</div>
-			<div class="black key" id="n58" style="left: 440px;">
-				<div class="label">A3#</div>
-			</div>
-			<div class="white key" id="n59" style="left: 455px;">
-				<div class="label">B3</div>
-			</div>
-			<div class="white key" id="n60" style="left: 490px;">
-				<div class="label">C4</div>
-			</div>
-			<div class="black key" id="n61" style="left: 510px;">
-				<div class="label">C4#</div>
-			</div>
-			<div class="white key" id="n62" style="left: 525px;">
-				<div class="label">D4</div>
-			</div>
-			<div class="black key" id="n63" style="left: 545px;">
-				<div class="label">D4#</div>
-			</div>
-			<div class="white key" id="n64" style="left: 560px;">
-				<div class="label">E4</div>
-			</div>
-			<div class="white key" id="n65" style="left: 595px;">
-				<div class="label">F4</div>
-			</div>
-			<div class="black key" id="n66" style="left: 615px;">
-				<div class="label">F4#</div>
-			</div>
-			<div class="white key" id="n67" style="left: 630px;">
-				<div class="label">G4</div>
-			</div>
-			<div class="black key" id="n68" style="left: 650px;">
-				<div class="label">G4#</div>
-			</div>
-			<div class="white key" id="n69" style="left: 665px;">
-				<div class="label">A4</div>
-			</div>
-			<div class="black key" id="n70" style="left: 685px;">
-				<div class="label">A4#</div>
-			</div>
-			<div class="white key" id="n71" style="left: 700px;">
-				<div class="label">B4</div>
-			</div>
-			<div class="white key" id="n72" style="left: 735px;">
-				<div class="label">C5</div>
-			</div>
-			<div class="black key" id="n73" style="left: 755px;">
-				<div class="label">C5#</div>
-			</div>
-			<div class="white key" id="n74" style="left: 770px;">
-				<div class="label">D5</div>
-			</div>
-			<div class="black key" id="n75" style="left: 790px;">
-				<div class="label">D5#</div>
-			</div>
-			<div class="white key" id="n76" style="left: 805px;">
-				<div class="label">E5</div>
-			</div>
-			<div class="white key" id="n77" style="left: 840px;">
-				<div class="label">F5</div>
-			</div>
-			<div class="black key" id="n78" style="left: 860px;">
-				<div class="label">F5#</div>
-			</div>
-			<div class="white key" id="n79" style="left: 875px;">
-				<div class="label">G5</div>
-			</div>
-			<div class="black key" id="n80" style="left: 895px;">
-				<div class="label">G5#</div>
-			</div>
-			<div class="white key" id="n81" style="left: 910px;">
-				<div class="label">A5</div>
-			</div>
-			<div class="black key" id="n82" style="left: 930px;">
-				<div class="label">A5#</div>
-			</div>
-			<div class="white key" id="n83" style="left: 945px;">
-				<div class="label">B5</div>
-			</div>
-			<div class="white key" id="n84" style="left: 980px;">
-				<div class="label">C6</div>
-			</div>
-			<div class="black key" id="n85" style="left: 1000px;">
-				<div class="label">C6#</div>
-			</div>
-			<div class="white key" id="n86" style="left: 1015px;">
-				<div class="label">D6</div>
-			</div>
-			<div class="black key" id="n87" style="left: 1035px;">
-				<div class="label">D6#</div>
-			</div>
-			<div class="white key" id="n88" style="left: 1050px;">
-				<div class="label">E6</div>
-			</div>
-			<div class="white key" id="n89" style="left: 1085px;">
-				<div class="label">F6</div>
-			</div>
-			<div class="black key" id="n90" style="left: 1105px;">
-				<div class="label">F6#</div>
-			</div>
-			<div class="white key" id="n91" style="left: 1120px;">
-				<div class="label">G6</div>
-			</div>
-			<div class="black key" id="n92" style="left: 1140px;">
-				<div class="label">G6#</div>
-			</div>
-			<div class="white key" id="n93" style="left: 1155px;">
-				<div class="label">A6</div>
-			</div>
-			<div class="black key" id="n94" style="left: 1175px;">
-				<div class="label">A6#</div>
-			</div>
-			<div class="white key" id="n95" style="left: 1190px;">
-				<div class="label">B6</div>
+			<div class="col-10">
+				<div style="width: 1200px;margin-left: auto;margin-right: auto;">
+					<div id="paper" style="height: 600px;overflow-y: scroll;"></div>
+					<div id="audio"></div>
+					<p class="beat"></p>
+				</div>
+				<div id="keyboard" class="keyboard-holder" style="width: 1200px;">
+					<div class="white key" id="n36" style="left: 0px;">
+						<div class="label">C2</div>
+					</div>
+					<div class="black key" id="n37" style="left: 20px;">
+						<div class="label">C2#</div>
+					</div>
+					<div class="white key" id="n38" style="left: 35px;">
+						<div class="label">D2</div>
+					</div>
+					<div class="black key" id="n39" style="left: 55px;">
+						<div class="label">D2#</div>
+					</div>
+					<div class="white key" id="n40" style="left: 70px;">
+						<div class="label">E2</div>
+					</div>
+					<div class="white key" id="n41" style="left: 105px;">
+						<div class="label">F2</div>
+					</div>
+					<div class="black key" id="n42" style="left: 125px;">
+						<div class="label">F2#</div>
+					</div>
+					<div class="white key" id="n43" style="left: 140px;">
+						<div class="label">G2</div>
+					</div>
+					<div class="black key" id="n44" style="left: 160px;">
+						<div class="label">G2#</div>
+					</div>
+					<div class="white key" id="n45" style="left: 175px;">
+						<div class="label">A2</div>
+					</div>
+					<div class="black key" id="n46" style="left: 195px;">
+						<div class="label">A2#</div>
+					</div>
+					<div class="white key" id="n47" style="left: 210px;">
+						<div class="label">B2</div>
+					</div>
+					<div class="white key" id="n48" style="left: 245px;">
+						<div class="label">C3</div>
+					</div>
+					<div class="black key" id="n49" style="left: 265px;">
+						<div class="label">C3#</div>
+					</div>
+					<div class="white key" id="n50" style="left: 280px;">
+						<div class="label">D3</div>
+					</div>
+					<div class="black key" id="n51" style="left: 300px;">
+						<div class="label">D3#</div>
+					</div>
+					<div class="white key" id="n52" style="left: 315px;">
+						<div class="label">E3</div>
+					</div>
+					<div class="white key" id="n53" style="left: 350px;">
+						<div class="label">F3</div>
+					</div>
+					<div class="black key" id="n54" style="left: 370px;">
+						<div class="label">F3#</div>
+					</div>
+					<div class="white key" id="n55" style="left: 385px;">
+						<div class="label">G3</div>
+					</div>
+					<div class="black key" id="n56" style="left: 405px;">
+						<div class="label">G3#</div>
+					</div>
+					<div class="white key" id="n57" style="left: 420px;">
+						<div class="label">A3</div>
+					</div>
+					<div class="black key" id="n58" style="left: 440px;">
+						<div class="label">A3#</div>
+					</div>
+					<div class="white key" id="n59" style="left: 455px;">
+						<div class="label">B3</div>
+					</div>
+					<div class="white key" id="n60" style="left: 490px;">
+						<div class="label">C4</div>
+					</div>
+					<div class="black key" id="n61" style="left: 510px;">
+						<div class="label">C4#</div>
+					</div>
+					<div class="white key" id="n62" style="left: 525px;">
+						<div class="label">D4</div>
+					</div>
+					<div class="black key" id="n63" style="left: 545px;">
+						<div class="label">D4#</div>
+					</div>
+					<div class="white key" id="n64" style="left: 560px;">
+						<div class="label">E4</div>
+					</div>
+					<div class="white key" id="n65" style="left: 595px;">
+						<div class="label">F4</div>
+					</div>
+					<div class="black key" id="n66" style="left: 615px;">
+						<div class="label">F4#</div>
+					</div>
+					<div class="white key" id="n67" style="left: 630px;">
+						<div class="label">G4</div>
+					</div>
+					<div class="black key" id="n68" style="left: 650px;">
+						<div class="label">G4#</div>
+					</div>
+					<div class="white key" id="n69" style="left: 665px;">
+						<div class="label">A4</div>
+					</div>
+					<div class="black key" id="n70" style="left: 685px;">
+						<div class="label">A4#</div>
+					</div>
+					<div class="white key" id="n71" style="left: 700px;">
+						<div class="label">B4</div>
+					</div>
+					<div class="white key" id="n72" style="left: 735px;">
+						<div class="label">C5</div>
+					</div>
+					<div class="black key" id="n73" style="left: 755px;">
+						<div class="label">C5#</div>
+					</div>
+					<div class="white key" id="n74" style="left: 770px;">
+						<div class="label">D5</div>
+					</div>
+					<div class="black key" id="n75" style="left: 790px;">
+						<div class="label">D5#</div>
+					</div>
+					<div class="white key" id="n76" style="left: 805px;">
+						<div class="label">E5</div>
+					</div>
+					<div class="white key" id="n77" style="left: 840px;">
+						<div class="label">F5</div>
+					</div>
+					<div class="black key" id="n78" style="left: 860px;">
+						<div class="label">F5#</div>
+					</div>
+					<div class="white key" id="n79" style="left: 875px;">
+						<div class="label">G5</div>
+					</div>
+					<div class="black key" id="n80" style="left: 895px;">
+						<div class="label">G5#</div>
+					</div>
+					<div class="white key" id="n81" style="left: 910px;">
+						<div class="label">A5</div>
+					</div>
+					<div class="black key" id="n82" style="left: 930px;">
+						<div class="label">A5#</div>
+					</div>
+					<div class="white key" id="n83" style="left: 945px;">
+						<div class="label">B5</div>
+					</div>
+					<div class="white key" id="n84" style="left: 980px;">
+						<div class="label">C6</div>
+					</div>
+					<div class="black key" id="n85" style="left: 1000px;">
+						<div class="label">C6#</div>
+					</div>
+					<div class="white key" id="n86" style="left: 1015px;">
+						<div class="label">D6</div>
+					</div>
+					<div class="black key" id="n87" style="left: 1035px;">
+						<div class="label">D6#</div>
+					</div>
+					<div class="white key" id="n88" style="left: 1050px;">
+						<div class="label">E6</div>
+					</div>
+					<div class="white key" id="n89" style="left: 1085px;">
+						<div class="label">F6</div>
+					</div>
+					<div class="black key" id="n90" style="left: 1105px;">
+						<div class="label">F6#</div>
+					</div>
+					<div class="white key" id="n91" style="left: 1120px;">
+						<div class="label">G6</div>
+					</div>
+					<div class="black key" id="n92" style="left: 1140px;">
+						<div class="label">G6#</div>
+					</div>
+					<div class="white key" id="n93" style="left: 1155px;">
+						<div class="label">A6</div>
+					</div>
+					<div class="black key" id="n94" style="left: 1175px;">
+						<div class="label">A6#</div>
+					</div>
+					<div class="white key" id="n95" style="left: 1190px;">
+						<div class="label">B6</div>
+					</div>
+				</div>
 			</div>
 </body>
 
