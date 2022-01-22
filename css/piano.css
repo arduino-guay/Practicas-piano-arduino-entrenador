@@ -1,0 +1,69 @@
+main {
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+.feedback {
+    height: 600px;
+    font-family: Arial, "sans-serif";
+}
+
+.highlight {
+    fill: #0a9ecc;
+}
+
+.abcjs-cursor {
+    stroke: red;
+}
+
+.audio-error {
+    color: red;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.click-explanation {
+    color: red;
+    font-style: italic;
+}
+
+.beat {
+    font-weight: bold;
+}
+
+.abcjs-inline-audio .abcjs-btn {
+    height: auto;
+}
+.abcjs-p-7,.abcjs-p0,.abcjs-p7 {
+    fill: rgb(168, 134, 90);
+    stroke: black;
+}
+
+.abcjs-p-6,.abcjs-p1,.abcjs-p8 {
+    fill: red;
+    stroke: black;
+}
+
+.abcjs-p-5,.abcjs-p2,.abcjs-p9 {
+    fill: orange;
+    stroke: black;
+}
+
+.abcjs-p-4, svg .abcjs-p3,.abcjs-p10 {
+    fill: yellow;
+    stroke: black;
+}
+
+.abcjs-p-3,.abcjs-p4,.abcjs-p11 {
+    fill: greenyellow;
+    stroke: black;
+}
+.abcjs-p-2,.abcjs-p5,.abcjs-p12 {
+    fill: rgb(0, 140, 255);
+    stroke: black;
+}
+
+.abcjs-p-1,.abcjs-p6,.abcjs-p13 {
+    fill: violet;
+    stroke: black;
+}
