@@ -36,34 +36,33 @@ main {
 }
 .abcjs-p-7,.abcjs-p0,.abcjs-p7 {
     fill: rgb(168, 134, 90);
-    stroke: black;
+    stroke:rgb(168, 134, 90);   
 }
 
 .abcjs-p-6,.abcjs-p1,.abcjs-p8 {
     fill: red;
-    stroke: black;
 }
 
 .abcjs-p-5,.abcjs-p2,.abcjs-p9 {
     fill: orange;
-    stroke: black;
+    stroke: rgb(214, 141, 5);
 }
 
 .abcjs-p-4, svg .abcjs-p3,.abcjs-p10 {
     fill: yellow;
-    stroke: black;
+    stroke: rgb(221, 221, 6)
 }
 
 .abcjs-p-3,.abcjs-p4,.abcjs-p11 {
     fill: greenyellow;
-    stroke: black;
+    stroke: rgb(145, 214, 41);
 }
 .abcjs-p-2,.abcjs-p5,.abcjs-p12 {
     fill: rgb(0, 140, 255);
-    stroke: black;
+    stroke: rgb(0, 140, 255);
 }
 
 .abcjs-p-1,.abcjs-p6,.abcjs-p13 {
     fill: violet;
-    stroke: black;
+    stroke: rgb(184, 102, 184);
 }
