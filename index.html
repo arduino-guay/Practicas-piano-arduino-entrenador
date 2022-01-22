@@ -28,16 +28,18 @@
 			<div class="col-2">
 				<div>
 					<label for="canciones" class="form-label">Seleccionar canción</label>
-					<select class="form-select" id="canciones" onchange="cambiaCancion()" />
+					<select class="form-select" id="canciones" onchange="cambiaCancion()">
+					</select>	
 				</div>
+				<br/>
 				<div class="input-group">
-					<div class="input-group-text" id="manoIzq">Mano izquierda</div>
+					<div class="input-group-text" id="manoIzq" style="width: 200px;">Mano izquierda</div>
 					<div class="input-group-text">
 						<input class="form-check-input" type="checkbox" value="" id="chkIzquierda" checked onchange="cambiaCancion()">
 					</div>
 				</div>
 				<div class="input-group">
-					<div class="input-group-text" id="manoDer">Mano derecha</div>
+					<div class="input-group-text" id="manoDer" style="width: 200px;">Mano derecha</div>
 					<div class="input-group-text">
 						<input class="form-check-input" type="checkbox" value="" id="chkDerecha" checked onchange="cambiaCancion()">
 					</div>
