@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/piano.css">
 	<link rel="stylesheet" type="text/css" href="css/teclado.css">
 
-	<script src="js/abcjs-basic.js" type="text/javascript"></script>
+	<script src="js/abcjs-basic-min.js" type="text/javascript"></script>
 	<script src="js/piano.js" type="text/javascript"></script>
 	<script src="js/teclado.js" type="text/javascript"></script>
 </head>
@@ -29,6 +29,18 @@
 				<div>
 					<label for="canciones" class="form-label">Seleccionar canción</label>
 					<select class="form-select" id="canciones" onchange="cambiaCancion()">
+					</select>	
+				</div>
+				<br/>
+				<div>
+					<label for="metronomo" class="form-label">Metrónomo</label>
+					<select class="form-select" id="metronomo" onchange="cambiaCancion()">
+						<option value="">...</option>
+						<option value="dd 76 77 60 50">2/4</option>
+						<option value="ddd 76 77 77 60 50 50">3/4</option>
+						<option value="dddd 76 77 77 77 60 50 50 50" selected>4/4</option>
+						<option value="dddddd 76 77 77 77 77 77 60 50 50 50 50 50">6/4</option>
+						<option value="dd 76 77 60 50">6/8</option>
 					</select>	
 				</div>
 				<br/>

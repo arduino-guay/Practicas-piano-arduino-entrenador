@@ -2,6 +2,7 @@ var hayMidi = false;
 var midiOut = [];
 var chkDer, chkIzq;
 var timer;
+var metronomo ="dddd 76 77 77 77 60 50 50 50";
 
 function connect() {
     navigator.requestMIDIAccess()
@@ -270,7 +271,8 @@ function setTune(userAction, abcText) {
         console.log(response);
         if (synthControl) {
             let options = {
-                drum: "dddd 76 77 77 77 60 30 30 30"
+                //program: 14,
+                drum: metronomo
                 //drum : "dd 76 77 60 30" 
             };
             synthControl.setTune(visualObj, userAction, options).then(function (response) {
@@ -292,6 +294,8 @@ function cargaCombo() {
 }
 
 function cambiaCancion() {
+    var met = document.getElementById('metronomo');
+    metronomo = met.value;
     var ele = document.getElementById('canciones');
     cargaPractica(ele.value);
 }
