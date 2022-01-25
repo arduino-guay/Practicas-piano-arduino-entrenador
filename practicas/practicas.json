@@ -63,6 +63,14 @@
         {
             "titulo": "Piratas del Caribe",
             "file": "piratas-del-caribe.txt"
+        },
+        {
+            "titulo": "Marcha Nupcial",
+            "file": "Marcha-Nupcial.txt"
+        },
+        {
+            "titulo": "El Cuco",
+            "file": "Cuco.txt"
         }
     ]
 }
