@@ -1,0 +1,16 @@
+X:592
+T:Chopsticks
+C:anon.
+O:USA
+Q:1/4=120
+F:http://abc.musicaviva.com/tunes/usa/chopsticks.abc
+%Posted October 2nd 2001 at abcusers by Frank Nordberg. (Hey, somebody asked for it!!!)
+M:6/8
+L:1/8
+K:C
+"G7"[GF][GF][GF] [GF][GF][GF]|"C"[GE][GE][GE] [GE][GE][GE]|\
+"G7"[BD][BD][BD] [BD][BD][BD]|
+[1"C" [c2C2][cC] [cC][BD][AE]:|\
+[2 "C" [c2C2][cC] [c2C2][ec]|:"G7" [d2B2][cA] [B2G2][AF]|
+"C"[G2E2][GE] [GE][AF][GE]| "G7" [F2D2][FD] [FD][GE][FD] |\
+[1"C" [E2C2][FD] [G2E2][ec]:|[2"C" [E2C2][FD] [E2C2] z:|

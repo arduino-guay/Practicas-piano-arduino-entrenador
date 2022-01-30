@@ -75,6 +75,10 @@
         {
             "titulo": "El Cuco",
             "file": "Cuco.txt"
+        },
+        {
+            "titulo": "Chopsticks",
+            "file": "Chopsticks.txt"
         }
     ]
 }
