@@ -17,7 +17,7 @@ V: Izq
 K:C clef=bass
 %%MIDI program 1
 %-
-C,2 E,2 G,2| C,2 E,2 G,2 | F,2 E,2 D,2 | C,2 E,2 G,2 |
+!ppp!C,2 E,2 G,2| C,2 E,2 G,2 | F,2 E,2 D,2 | C,2 E,2 G,2 |
 C,2 E,2 G,2| C,2 E,2 G,2 | F,2 G,2 F,2 | E,4 G,2 |
 B,,2 D,2 G,2| B,,2 D,2 G,2| C,2 E,2 G,2| C,2 E,2 G,2 |
 C,2 E,2 G,2| C,2 E,2 G,2 | F,2 G,2 F,2 | E,6 |

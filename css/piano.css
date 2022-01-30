@@ -34,35 +34,35 @@ main {
 .abcjs-inline-audio .abcjs-btn {
     height: auto;
 }
-.abcjs-p-7,.abcjs-p0,.abcjs-p7 {
+.abcjs-p-14,.abcjs-p-7,.abcjs-p0,.abcjs-p7,.abcjs-p14 {
     fill: rgb(168, 134, 90);
     stroke:rgb(168, 134, 90);   
 }
 
-.abcjs-p-6,.abcjs-p1,.abcjs-p8 {
+.abcjs-p-13,.abcjs-p-6,.abcjs-p1,.abcjs-p8,.abcjs-p15 {
     fill: red;
 }
 
-.abcjs-p-5,.abcjs-p2,.abcjs-p9 {
+.abcjs-p-12,.abcjs-p-5,.abcjs-p2,.abcjs-p9,.abcjs-p16 {
     fill: orange;
     stroke: rgb(214, 141, 5);
 }
 
-.abcjs-p-4, svg .abcjs-p3,.abcjs-p10 {
+.abcjs-p-11,.abcjs-p-4, svg .abcjs-p3,.abcjs-p10,.abcjs-p17 {
     fill: yellow;
     stroke: rgb(221, 221, 6)
 }
 
-.abcjs-p-3,.abcjs-p4,.abcjs-p11 {
+.abcjs-p-10,.abcjs-p-3,.abcjs-p4,.abcjs-p11,.abcjs-p18 {
     fill: greenyellow;
     stroke: rgb(145, 214, 41);
 }
-.abcjs-p-2,.abcjs-p5,.abcjs-p12 {
+.abcjs-p-16,.abcjs-p-9,.abcjs-p-2,.abcjs-p5,.abcjs-p12 {
     fill: rgb(0, 140, 255);
     stroke: rgb(0, 140, 255);
 }
 
-.abcjs-p-8,.abcjs-p-1,.abcjs-p6,.abcjs-p13 {
+.abcjs-p-15,.abcjs-p-8,.abcjs-p-1,.abcjs-p6,.abcjs-p13 {
     fill: violet;
     stroke: rgb(184, 102, 184);
 }
