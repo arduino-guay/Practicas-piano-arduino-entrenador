@@ -3,6 +3,7 @@ var midiOut = [];
 var chkDer, chkIzq;
 var timer;
 var metronomo ="dddd 76 77 77 77 60 50 50 50";
+var trasponerSeminTonos; 
 
 function connect() {
     navigator.requestMIDIAccess()
@@ -188,7 +189,8 @@ var abcOptions = {
     responsive: "resize",
     viewportVertical: true,
     staffwidth: 900,
-    scale:2
+    scale:2,
+    visualTranspose: trasponerSeminTonos
 };
 
 function load() {
@@ -250,6 +252,7 @@ function setTune(userAction, abcText) {
     }
 
     synthControl.disable(true);
+    abcOptions.visualTranspose = trasponerSeminTonos;
     var visualObj = ABCJS.renderAbc("paper", cancion, abcOptions)[0];
     timer.setMsMedida(visualObj.millisecondsPerMeasure());
     // TODO-PER: This will allow the callback function to have access to timing info - this should be incorporated into the render at some point.
@@ -272,7 +275,8 @@ function setTune(userAction, abcText) {
         if (synthControl) {
             let options = {
                 //program: 14,
-                drum: metronomo
+                drum: metronomo,
+                midiTranspose: trasponerSeminTonos
                 //drum : "dd 76 77 60 30" 
             };
             synthControl.setTune(visualObj, userAction, options).then(function (response) {
@@ -297,6 +301,7 @@ function cambiaCancion() {
     var met = document.getElementById('metronomo');
     metronomo = met.value;
     var ele = document.getElementById('canciones');
+    trasponerSeminTonos = document.getElementById("trasponer").value;
     cargaPractica(ele.value);
 }
 

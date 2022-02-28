@@ -1,0 +1,18 @@
+X:1
+T:Pompa y circustancia
+M:C
+L:1/8
+Q:1/4=90
+V: Der
+%%MIDI program 0
+K:C clef=treble
+%-
+c4 Bc d2 |  A4 G4 | F4 EF G2 | D8 | E4 ^FG A2 | d4 G4 | c4 cB A2 | G8 | 
+c4 Bc d2 |  A4 G4 | F4 EF G2 | D8 | E4 ^FG A2 | d4 G4 | f4 fe d2 | c8 | 
+A4 B c2 d | G4 c4 | C4 F E2 D | C8
+%-
+V: Izq
+%%MIDI program 1
+K:C clef=bass
+%-
+
