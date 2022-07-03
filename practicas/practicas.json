@@ -83,6 +83,22 @@
         {
             "titulo": "Pompa y circustancia",
             "file": "pompa-y-circustancia.txt"
+        },
+        {
+            "titulo": "Koi",
+            "file": "Koi.txt"
+        },
+        {
+            "titulo": "Cinema Paradiso",
+            "file": "Cinema-Paradiso.txt"
+        },
+        {
+            "titulo": "To the Unknow man",
+            "file": "To-The-Unknow-Man.txt"
+        },
+        {
+            "titulo": "The Silk Road",
+            "file": "The-Silk-Road.txt"
         }
     ]
 }

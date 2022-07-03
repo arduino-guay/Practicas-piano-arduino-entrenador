@@ -1,0 +1,14 @@
+X: 1
+T: KOI
+M: 3/4
+L: 1/8
+Q:1/4=60
+C: Kitaro
+%%MIDI program 63 %   Flute
+ CD |: "Am"E4 GE | "Dm"  D4 "Am" CD | E4 GE | "Dm" D4 CD |
+"Am" E2 G2 A2| "F" c4 BA | "G" G6- |1 -G4 CD :|2 -G4 G2 |
+|:"Am" c4 cG | "F" A6 | B3 c dB | "G" G4 E2 | "Dm" F4 GA |
+|1 c2 B2 A2 | G6- | -G4 E2 :|2 B4 cd |
+"Am" c4 de | "F" d2 B2 G2 | F4 GA | B4 cd |
+c4 de | d2 c2 B2 | c6- |  -c4 z2 |
+

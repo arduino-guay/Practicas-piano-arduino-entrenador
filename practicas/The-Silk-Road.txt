@@ -1,0 +1,10 @@
+X: 1
+T: The Silk Road
+M: 4/4
+L: 1/8
+Q:1/4=60
+C: Kitaro
+%%MIDI program 63 %   Flute
+(GA |: c3) d e3 g| a>b ag e2 ag | f4 - fcfe |e6- e efg |
+f4 -f def |e6- e efg | f4 a2 gf |1 g6 GA :|2 g6 z2  |
+F3 G A3 B | G6 z2 | F3 G A3 B | cB A4 Bc |d4-dGdc | c8 |

@@ -1,0 +1,15 @@
+X:1
+T:To The Unknow Man 
+C:Vangelis
+M:C
+L:1/8
+Q:1/4=90
+V: Der
+%%MIDI program 0
+K: Bbm clef=treble
+z6 GFED | A6 GFGA | G2 F4 GFED | A6 GFGA | G2 F4 GFED |
+A6 GFGA | G2 F4 GFED |  A6 GFGA | G2 F4 dcBc | d6 cBAB |
+A6 dcBc | d6 cBAB | A6 BAGA | B6 AGFG | A6 GFED |
+A6 GFEF | E2 D4 GFED | A6 GFGA | G2 F4 GFED | A6 GFGA | 
+G2 F4 GFED | A6 GFGA | 
+G2 F4 GFED | A6 GFEF | E2 D6 
