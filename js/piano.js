@@ -2,8 +2,8 @@ var hayMidi = false;
 var midiOut = [];
 var chkDer, chkIzq;
 var timer;
-var metronomo ="dddd 76 77 77 77 60 50 50 50";
-var trasponerSeminTonos; 
+var metronomo = "dddd 76 77 77 77 60 50 50 50";
+var trasponerSeminTonos;
 
 function connect() {
     navigator.requestMIDIAccess()
@@ -86,6 +86,8 @@ function CursorControl() {
     t0 = Date.now();
     var self = this;
     timer = new TimerNotas();
+    self.beatSubdivisions = 1;
+
 
     self.onStart = function () {
         var svg = document.querySelector("#paper svg");
@@ -98,7 +100,7 @@ function CursorControl() {
         svg.appendChild(cursor);
         t0 = Date.now();
     };
-    self.beatSubdivisions = 1;
+
     self.onBeat = function (beatNumber, totalBeats, totalTime) {
         //console.log('(' + (Date.now() - t0) + ') : ' + beatNumber );
         t0 = Date.now();
@@ -107,6 +109,7 @@ function CursorControl() {
         self.beatDiv.innerText = "Beat: " + beatNumber + " Total: " + totalBeats + " Total time: " + totalTime;
         //ABCJS.synth.playEvent([{"cmd":"note","pitch":76+beatNumber%4,"volume":105,"start":0,"duration":0.125,"instrument":10,"gap":0}]);
     };
+
     self.onEvent = function (ev) {
         //console.log(ev);
         if (ev.midiPitches && ev.midiPitches[0]) {
@@ -118,28 +121,28 @@ function CursorControl() {
         var lastSelection = document.querySelectorAll("#paper svg .highlight");
         for (var k = 0; k < lastSelection.length; k++)
             lastSelection[k].classList.remove("highlight");
-        /*
-        var el = document.querySelector(".feedback").innerHTML = "<div class='label'>Current Note:</div>" + JSON.stringify(ev, null, 4);
+        //var el = document.querySelector(".feedback").innerHTML = "<div class='label'>Current Note:</div>" + JSON.stringify(ev, null, 4);
         for (var i = 0; i < ev.elements.length; i++) {
             var note = ev.elements[i];
             for (var j = 0; j < note.length; j++) {
                 note[j].classList.add("highlight");
             }
         }
-        */
+
         var cursor = document.querySelector("#paper svg .abcjs-cursor");
         if (cursor) {
             cursor.setAttribute("x1", ev.left - 2);
             cursor.setAttribute("x2", ev.left - 2);
             cursor.setAttribute("y1", ev.top);
             cursor.setAttribute("y2", ev.top + ev.height);
-            document.querySelector("#paper").scrollTo(0, ev.top - 100);
+            //document.querySelector("#paper").scrollTo(0, ev.top - 100);
         }
     };
+
     self.onFinished = function () {
-        var els = document.querySelectorAll("svg .highlight");
+        var els = document.querySelectorAll("svg .abcjs-note_selected");
         for (var i = 0; i < els.length; i++) {
-            els[i].classList.remove("highlight");
+            els[i].classList.remove("abcjs-note_selected");
         }
         var cursor = document.querySelector("#paper svg .abcjs-cursor");
         if (cursor) {
@@ -149,6 +152,7 @@ function CursorControl() {
             cursor.setAttribute("y2", 0);
         }
     };
+
     self.encederNota = function (notas) {
         timer.encederNota(notas);
     };
@@ -165,17 +169,24 @@ var cancion;
 var synthControl;
 
 function clickListener(abcElem, tuneNumber, classes, analysis, drag, mouseEvent) {
-    var output = "currentTrackMilliseconds: " + abcElem.currentTrackMilliseconds + "<br>" +
-        "currentTrackWholeNotes: " + abcElem.currentTrackWholeNotes + "<br>" +
-        "midiPitches: " + JSON.stringify(abcElem.midiPitches, null, 4) + "<br>" +
-        "gracenotes: " + JSON.stringify(abcElem.gracenotes, null, 4) + "<br>" +
-        "midiGraceNotePitches: " + JSON.stringify(abcElem.midiGraceNotePitches, null, 4) + "<br>";
-    //document.querySelector(".clicked-info").innerHTML = "<div class='label'>Clicked info:</div>" + output;
-    cursorControl.encederNota(abcElem.midiPitches);
     var lastClicked = abcElem.midiPitches;
     if (!lastClicked)
         return;
 
+    if (synthControl) {
+        if (!synthControl.isLoaded)
+            synthControl.play().then(function () {
+                synthControl.seek(
+                    abcElem.currentTrackMilliseconds /
+                    (synthControl.midiBuffer.duration * 1000)
+                );
+            });
+        else
+            synthControl.seek(
+                abcElem.currentTrackMilliseconds /
+                (synthControl.midiBuffer.duration * 1000)
+            );
+    }
     ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
         console.log("note played");
     }).catch(function (error) {
@@ -189,7 +200,7 @@ var abcOptions = {
     responsive: "resize",
     viewportVertical: true,
     staffwidth: 900,
-    scale:2,
+    scale: 2,
     visualTranspose: trasponerSeminTonos
 };
 
@@ -251,7 +262,7 @@ function setTune(userAction, abcText) {
         cancion += 'V:' + partes[2];
     }
 
-    synthControl.disable(true);
+    //synthControl.disable(true);
     abcOptions.visualTranspose = trasponerSeminTonos;
     var visualObj = ABCJS.renderAbc("paper", cancion, abcOptions)[0];
     timer.setMsMedida(visualObj.millisecondsPerMeasure());
