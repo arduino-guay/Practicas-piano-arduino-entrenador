@@ -1,0 +1,12 @@
+X: 1
+T: Coldplay Piano Riff: “Clocks
+M: 4/4
+L: 1/8
+R: reel
+K: Fmin
+Q:1/4=120
+V: Der
+eBGe  BGeB | dBFd  BFdB | dBFd  BFdB | cAFc AFcA   
+V: Izq
+K:Fmin clef=bass
+[EB,G,]8 | [DB,F,]8 | [DB,F,]8| [CA,F,]8

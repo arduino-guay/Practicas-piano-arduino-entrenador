@@ -1,0 +1,15 @@
+X:1
+T:Avión de papel
+L:1/8
+M:3/4
+Q: 90
+K:F
+V:1
+(A G A3 c | A G A4) | (A2 f2 A2 | c2 B4) |
+(B A B3 d | B A B4) | G2 A2 B2 |d2 c4 |
+(f e f3 a | g6) | (e d  e3 g| f6 ) |
+(f e f3 A | G2) (c2 B2 | A2 G2) (c B | A2 G4) |
+(E2 F2 G2)| (A G A3 c) | (A G 2 A4) | A2 f2 A2 |
+c2 B4 | B A B3 d | B A B4 | G2A2 B2 |
+d2 c4 | d c d3 f | e6 | (e d e3 g | 
+f2) (G2 A2 | d3 d d d  | A6 | G6 | F6)

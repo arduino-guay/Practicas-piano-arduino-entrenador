@@ -1,0 +1,11 @@
+X: 1
+T: The Cantina Band
+C: John Williams
+M: 4/4
+L: 1/4
+K: G
+Q: 1/4=224
+V: Der
+B e B e | B/ e  B z/ ^A/ B | A/^G/A/=G/2 z/ ^G/A/G/ | G3/2 E/-E2
+B e B e | B/ e  B z/ ^A/ B | A A-A/^G/ A | d/ c B A3/2 |
+B e B e | B/ e  B z/ ^A/ B | d d-d/B/ A | G3/2 E/-E2

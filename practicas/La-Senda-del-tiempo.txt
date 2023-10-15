@@ -1,0 +1,18 @@
+X: 1
+T: Celtas Cortos
+M: 4/4
+L: 1/8
+R: La senda del tiempo
+K: Bm 
+Q: 1/4=80
+V: Der
+A,/B,/ | D3 A, A,3 F,/A,/ | B,/D/ B,6 A,/B,/ | DEFG A3 F/A/ | B/d/ B6 B | A3 F F2 ED| 
+FEDB, D3 A,/B,/ | DEFG A2 GF | ED/E/ FE D3 A,/B,/ | D3 A,/ A,3 F,/A,/ |
+B,/D/ B,6 A,/B,/ | DEFG A3 F/A/  | B/d/ B6 B |A3 F F2 ED| FEDB, D3 A,/B,/ |
+DEFG A2 GF | EDFE D3 D
+V: Izq
+K:Bm clef=bass
+z | z8 | z8 | z8 | z8 | z8 |
+ z8 | z8 | z8 | [A,,D,F,]4  [A,,C,E,]4 | 
+[B,,D,F,]4 [B,,D,G,]4 |[A,,D,F,]4  [A,,C,E,]4 | [B,,D,F,]4 [B,,D,G,]4 | [A,,D,F,]4  [A,,C,E,]4 |
+ 

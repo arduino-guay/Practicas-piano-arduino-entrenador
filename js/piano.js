@@ -2,7 +2,7 @@ var hayMidi = false;
 var midiOut = [];
 var chkDer, chkIzq;
 var timer;
-var metronomo = "dddd 76 77 77 77 60 50 50 50";
+var metronomo = "dddd 76 77 77 77 127 100 100 100";
 var trasponerSeminTonos;
 
 function connect() {
@@ -199,8 +199,8 @@ var abcOptions = {
     clickListener: self.clickListener,
     responsive: "resize",
     viewportVertical: true,
-    staffwidth: 900,
-    scale: 2,
+    staffwidth: 1200,
+    scale: 1,
     visualTranspose: trasponerSeminTonos
 };
 
@@ -287,8 +287,9 @@ function setTune(userAction, abcText) {
             let options = {
                 //program: 14,
                 drum: metronomo,
-                midiTranspose: trasponerSeminTonos
+                midiTranspose: trasponerSeminTonos,
                 //drum : "dd 76 77 60 30" 
+                chordsOff: true
             };
             synthControl.setTune(visualObj, userAction, options).then(function (response) {
                 console.log("Audio successfully loaded.")

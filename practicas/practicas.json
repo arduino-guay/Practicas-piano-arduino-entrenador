@@ -1,38 +1,6 @@
 {
     "Practicas": [
         {
-            "titulo": "Ejercicio Nº 1",
-            "file": "practica-01.txt"
-        },
-        {
-            "titulo": "Ejercicio Nº 2",
-            "file": "practica-01.txt"
-        },
-        {
-            "titulo": "Practica 3",
-            "file": "practica-03.txt"
-        },
-        {
-            "titulo": "Practica 4",
-            "file": "practica-04.txt"
-        },
-        {
-            "titulo": "Practica 5",
-            "file": "practica-05.txt"
-        },
-        {
-            "titulo": "Notas",
-            "file": "Notas.txt"
-        },
-        {
-            "titulo": "Emotional Pattern",
-            "file": "Emotional-Pattern.txt"
-        },
-        {
-            "titulo": "Felices vamos",
-            "file": "Felices-vamos.txt"
-        },
-        {
             "titulo": "Star Wars Main Theme",
             "file": "Star-Wars-Main-Theme.txt"
         },
@@ -41,20 +9,16 @@
             "file": "El-lago-de-los-cisnes.txt"
         },
         {
-            "titulo": "La viejita",
-            "file": "La-viejita.txt"
-        },
-        {
-            "titulo": "A remar",
-            "file": "A-remar.txt"
-        },
-        {
             "titulo": "La marcha de los santos",
             "file": "La-marcha-de-los-santos.txt"
         },
         {
             "titulo": "pepinot",
             "file": "pepinot.txt"
+        },
+        {
+            "titulo": "Avión de papel",
+            "file": "Avion-de-papel.txt"
         },
         {
             "titulo": "Un Mundo ideal",
@@ -71,10 +35,6 @@
         {
             "titulo": "Marcha Nupcial",
             "file": "Marcha-Nupcial.txt"
-        },
-        {
-            "titulo": "El Cuco",
-            "file": "Cuco.txt"
         },
         {
             "titulo": "Chopsticks",
@@ -99,6 +59,18 @@
         {
             "titulo": "The Silk Road",
             "file": "The-Silk-Road.txt"
+        },
+        {
+            "titulo": "ColdPlay Clocks",
+            "file": "ColdPlay.txt"
+        },
+        {
+            "titulo": "La Senda del tiempo",
+            "file": "La-Senda-del-tiempo.txt"
+        },
+        {
+            "titulo": "The Cantina Band",
+            "file": "The-Cantina-band.txt"
         }
     ]
 }
