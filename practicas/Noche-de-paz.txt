@@ -1,0 +1,14 @@
+T:Noche de Paz
+M:3/4
+L:1/4
+Q: 90
+V: Der clef=treble
+G3/ A/ G | E3 | G3/ A/ G | E3 | d2 d | B3 | 
+c2 c | G3 | A2 A | c3/ B/ A | G3/ A/ G | E3 | 
+A2 A | c3/ B/ A | G3/ A/ G | E3 | d2 d | f3/ d/ B |
+c3 | e3 | c3/ G/ E | G3/ F/ D | C3- | C3
+V: Izq clef=bass
+!ppp! C, G, E, | C, G, E, | C, G, E, | C, G, E, | B,, G, F, | D, G, F, |
+C, G, E, | C, G, E, | C, A, F, | C, A, F, | C, G, E, | C, G, E, |
+C, A, F, | C, A, G, | C, G, E, | C, G, E, | B,, G, F, | B,, G, F, | 
+C, G, E, | C, G, E, | B,, G, F, | C, G, E, | C,3

@@ -289,7 +289,7 @@ function setTune(userAction, abcText) {
                 drum: metronomo,
                 midiTranspose: trasponerSeminTonos,
                 //drum : "dd 76 77 60 30" 
-                chordsOff: true
+                chordsOff: false
             };
             synthControl.setTune(visualObj, userAction, options).then(function (response) {
                 console.log("Audio successfully loaded.")

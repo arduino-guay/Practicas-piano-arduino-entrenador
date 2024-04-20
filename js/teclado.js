@@ -3,6 +3,7 @@ const primOctava = 2;
 const primNota = 36;
 
 const teclas = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+const sufj = ['','','', ',', '', '', "'", "''"];
 
 function generaTeclado(elemento) {
     let html = '';
@@ -14,9 +15,9 @@ function generaTeclado(elemento) {
 
             html += '<div class="key ' + (negra ? '' : 'n'+teclas[tecla]) +
                 (negra ? ' negra' : ' blanca') + '" id="n' + nota + '" style="left: ' + posX + 'px;">';
-            html += '<div class="label">' + teclas[tecla] + '</div></div>';
+            html += '<div class="label">' + (octava > 4 ? teclas[tecla].toLowerCase() : teclas[tecla]) + sufj[octava] + '</div></div>';
             nota++;
-            if (negra) {
+            if (negra) {    
                 posX += 15;
             } else if (teclas[tecla] == 'E' || teclas[tecla] == 'B') {
                 posX += 35;

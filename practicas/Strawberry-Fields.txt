@@ -1,0 +1,16 @@
+X:1
+T:Strawberry Fields Forever
+C:The Beatles
+L:1/4
+M:4/4
+Q:1/4=92
+V: Der
+%%MIDI program 0
+K:Gm clef=treble
+[Ac]/z/ [Ac]/z/ [Ac]/z/ [Ac]/z/| [Ac]/z/ [Ac] [GB] [^FA] | z/ G/ B z/ F/ A | [M:2/4] [EG]/z/ [DF]- |[M:4/4]  [DF] d/d/ e/ d B/ | 
+B F/G/ c/ B3/
+V: Izq
+%%MIDI program 0
+K:Gm clef=treble
+F2 =E2 | E4 | D2 C2 |[M:2/4] g/ z/ g |[M:4/4] [K:Gm clef=bass] [-B,F,B,,]4 | 
+[-B,F,G,,] G,, G,,  G,,

@@ -1,12 +1,16 @@
 {
     "Practicas": [
         {
-            "titulo": "Star Wars Main Theme",
-            "file": "Star-Wars-Main-Theme.txt"
-        },
-        {
             "titulo": "El lago de los cisnes",
             "file": "El-lago-de-los-cisnes.txt"
+        },
+        {
+            "titulo": "Noche de Paz",
+            "file": "Noche-de-paz.txt"
+        },
+        {
+            "titulo": "Star Wars Main Theme",
+            "file": "Star-Wars-Main-Theme.txt"
         },
         {
             "titulo": "La marcha de los santos",
@@ -61,6 +65,9 @@
             "file": "The-Silk-Road.txt"
         },
         {
+            "titulo": "Passend",
+            "file": "Passend.txt"
+        },        {
             "titulo": "ColdPlay Clocks",
             "file": "ColdPlay.txt"
         },
@@ -69,8 +76,20 @@
             "file": "La-Senda-del-tiempo.txt"
         },
         {
+            "titulo": "Strawberry Fields Forever",
+            "file": "Strawberry-Fields.txt"
+        },       
+        {
             "titulo": "The Cantina Band",
             "file": "The-Cantina-band.txt"
+        },       
+        {
+            "titulo": "El Fantasma de la ópera",
+            "file": "El-fantasma-de-la-opera.txt"
+        },       
+        {
+            "titulo": "ABC",
+            "file": "ABC.txt"
         }
     ]
 }

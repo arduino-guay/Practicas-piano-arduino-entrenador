@@ -1,8 +1,8 @@
 X: 1
-T: Celtas Cortos
+T: La senda del tiempo
 M: 4/4
 L: 1/8
-R: La senda del tiempo
+R: Celtas Cortos
 K: Bm 
 Q: 1/4=80
 V: Der

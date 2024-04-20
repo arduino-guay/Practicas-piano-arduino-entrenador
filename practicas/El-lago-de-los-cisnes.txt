@@ -1,28 +1,36 @@
 X:1
 T:El lago de los cisnes
 M:4/4
-L: 1/4
-Q: 1/4=120
+L: 1/8
+Q: 1/4=88
 V: Der
 %%MIDI program 0
 K:C clef=treble
-%-
-e4|ABcd|e3c|e3c|e3A|cAFc|
-A4-|AdcB|e4|ABcd|e3c|e3c|
-e3A|cAFc|A4-|A2A2|B2c2|d2ef|
-g3f|e2fg|a3g|f2ga|b3a|ecBA|
-B2c2|d2ef|g3f|e2fg|a3g|f2ga|
-b3^f|b4|e4|ABcd|e3c|e3c|
-e3A|cAFc|A4
-%-
+e4 ABcd | e3 c e3 c | e3 A cAFc |
+w: Lam Rem | Lam - Lam | Lam - Rem 
+A4 zdcB | e4 ABcd   | e3 c e3 c | 
+w: Lam Rem | Lam  Rem | Lam - Lam 
+e3 A cAFc | A4 z2 A2 |
+w: Lam - Rem | Lam  Lam 
+B2 c2 d2 ef | g3 f e2 fg | a3 g f2 ga | b3 a ecBA |
+w: Sol - Sol/Fa | Mim - Mim | Rem - Rem | Si - Mi
+B2 c2 d2 ef | g3 f e2 fg | a3 g f2 ga | _b3 f d2 fb | =b3 ^f b3 e | 
+w: Sol - Sol/Fa | Mim - Mim | Rem - Fa | Sib - Sib | Si - Mi
+e4 ABc=d | e3 c e3 c | e3 A cAFc |
+w: Lam Rem | Lam - Lam | Lam - Rem 
+A4 zdcB | e4 ABcd   | e3 c e3 c |   
+w: Lam Rem | Lam  Rem | Lam - Lam 
+e3 A cAFc | A4 z4  |
+w: Lam - Rem | Lam  Lam 
 V: Izq
 K:C clef=bass
 %%MIDI program 1
-%-
-!ppp!A,CE2|[A,4F4]|A,CE2|A,CE2|A,CE2|A,2D2|
-A,CE2|[A,4F4]|A,CE2|[A,4F4]|A,CE2|A,CE2
-A,CE2|A,2D2|A,CE2|A,4|G,B,D2|F,B,D2|
-E,G,B,G,|B,4|D,F,A,F,|C,4|[^D,4B,,4]|E,2A,2|
-G,B,D2|G,B,D2|E,G,B,G,|B,4|D,F,A,F,|C,4|
-[^D,4B,,4]|[^G,4E,4]|A,CE2|[A,4F4]|A,CE2|A,CE2|
-A,CE2|A,2D2|[A,4C4]
+!ppp! [A,CE]4 [D,F,A,]4  | [A,CE]4 [A,CE]4 | [A,CE]4 [D,F,A,]4 |
+[A,CE]4 z[D,F,A,]3 | [A,CE]4 [D,F,A,]4 | [A,CE]4 [A,CE]4 | 
+[A,CE]4 [D,F,A,]4  | [A,CE]4 z4 |
+[G,B,d,]4 [G,B,d,]4 | [E,G,B,]4 [E,G,B,]4 |  [D,F,A,]4  [D,F,A,]4 | [B,^D^F]4 [E,^G,B,]4 |
+[G,B,d,]4 [G,B,d,]4 | [E,G,B,]4 [E,G,B,]4 |  [D,F,A,]4  [F,A,C]4  | [^A,DF]4 [^A,DF]4 | [B,^D^F]4 [E,^G,B,]4 |
+[A,CE]4 [D,F,A,]4  | [A,CE]4 [A,CE]4 | [A,CE]4 [D,F,A,]4 |
+[A,CE]4 z[D,F,A,]3 | [A,CE]4 [D,F,A,]4 | [A,CE]4 [A,CE]4 | 
+[A,CE]4 [D,F,A,]4  | [A,CE]4 z4 |
+

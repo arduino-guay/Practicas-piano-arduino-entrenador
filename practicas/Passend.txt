@@ -1,0 +1,15 @@
+X:1
+T:Passend
+C:Wim Mertens
+M:4/4
+L: 1/8
+Q: 80
+K:F
+V: Der
+%%MIDI program 0
+z b/2 | a3 ccc cccc g/2 | f3  AAA g/2 e2 AAB  B'/2|  a3 ccc cccc d'/2 |
+e'3 aaa aaaa c'/2 | b3 ddd dddd c'/2 | b3 dde effg b/2 |a3 ccc cccc g/2|
+f3  AAA g/2 e2 AAB  B'/2| a3 ccc cccc g/2 | f3  AAA g/2 e2 AAB  A'/2 |b3 ccc cccc c'/2| 
+b3 ddd dddd a/2 | b3 ddd dddd c'/2 |b3 dde effg b/2| a3 ccc cccc g/2|
+f3  AAA g/2 e2 AAB  B'/2| a3 ccc cccc d'/2| e'3 aaa aaaa c'/2  | 
+b3 ddd dddd c'/2 |b3 dde effg | b/2 |a3

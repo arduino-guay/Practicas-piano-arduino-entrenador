@@ -1,0 +1,16 @@
+X: 1
+T: El Fantasma de la Ópera
+M: 4/4
+L: 1/4
+R: Andrew Lloyd Webber
+Q: 120
+K: C
+V: Der
+%%MIDI program 0
+A4- | A2 A/_A/G/^F/ | F4 | z4| A4- | A2 A/_A/G/^F/ | F4 | 
+_E/F/ z F/^F/G/^G/ | A4 | z E A E | G3/ F/ F2- | F D G3/ D/ | E4 |
+z E A E | G3/ F/ F2- | F D G3/ D/ | E4 |
+z E A c | e3/ d/ d2- | d d g3/ d/ | e4- | e2 z e | a4- | a/g/f/e/ d/c/B/A/ |
+^G4- | G F F3/ E/ | E4- | E2 z2 | z A d A | c3/ _B/ _B2- | _B G c3/ G/ | A4 |
+z A d f | a3/ g/ g2- | g g c'3/2 g/ | a4-  | a2 z a | d'4- | d'/c'/_b/a/ g/f/e/d/ |
+^c4- | ^c _B _B3/ A/ | A4- | A2 z2
