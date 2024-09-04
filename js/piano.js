@@ -314,6 +314,7 @@ function cambiaCancion() {
     metronomo = met.value;
     var ele = document.getElementById('canciones');
     trasponerSeminTonos = document.getElementById("trasponer").value;
+    document.title = ele.value.substring(0, ele.value.length-4);
     cargaPractica(ele.value);
 }
 

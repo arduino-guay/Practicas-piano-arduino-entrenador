@@ -6,22 +6,22 @@ Q:1/4=60
 V: Der
 %%MIDI program 0
 K:C clef=treble
-E,G,B,C | F,4D2F2| [CE]4E,G,B,C | D4F,2A,2 | [E,G,]4CDEF | G4GFED |
-C4FEDC | G,4[DF]4| [CE]4E,G,B,C | F,4D2F2| [CE]4E,G,B,C | D4EDEG |
-C4 CB,CE | z4EFDE | C8| z4CDEF | G8| z6CA |
-G4z4| z4CDEF | G4GFED | C4CDEC | D4z4| C4z3C |
-z4D2F2| [CE]4z3C | D8| z4CDEF | G4GFED | C4FEDC |
-z4[DF]4| [CE]4z3C | z4D2F2| [CE]4z3C | D4EDEG | C4Cz CE |
-z4EFDE | C8| z4EFDE | C4Cz CE | z4EFDE | C8-|
-C4EDEG | C4Cz CE | z4EFDE | C8-| C8|
+EGBc | F4d2f2| [ce]4EGBc | d4F2A2 | [EG]4cdef | g4gfed |
+c4fedc | G4[df]4| [ce]4EGBc | F4d2f2| [ce]4EGBc | d4edeg |
+c4 cBce | F4efde | c8| z4cdef | g8| z4ABca |
+g4z4| z4cdef | g4gfed | c4cdec | d4z4| c4EGBc |
+F4d2f2| [ce]4EGBc | d8| z4cdef | g4gfed | c4fedc |
+G4[df]4| [ce]4EGBc | F4d2f2| [ce]4EGBc | d4edeg | c4cB ce |
+F4 efde | C8| z4efde | c4cBce | z4efed | c8-|
+c4edeg | c4 cBce | F4 efde | c8-| c8|
 K:C clef=bass
 V:Izq
 %%MIDI program 1 
 z4 | z8 | z8 | z8| z8| [E,B,]8|
 [F,A,]8| z8| z8 | z8| z8 | z4G,4|
-A,4 z4| F,4G,2F,2| E,4F,2G,2| C,4z4| [E,B,]4E,G,A,B, | [F,A,]4A,B,z2|
-[E,B,]4E,G,A,B, | [F,A,]4z4| [E,B,]8| A,8| z2^A,2B,2G,2| E,4E,G,B,z |
-F,8| z4E,G,B,z | z4F,2A,2| [E,G,]4z4| [E,B,]8| [F,A,]8|
-G,8| z4E,G,B,z | F,8| z4E,G,B,z | z4G,4| A,4z B,z2|
-F,4G,2F,2| E,4F,4| G,4z4| A,4z B,z2| F,4G,2F,2| E,4F,4|
-E,4z4| A,4z B,z2| F,4G,2F,2| E,4F,2G,2| C,8|
+A,4 z4| z4 G,2F,2| E,4F,2G,2| C,4z4| [E,B,]4E,G,A,B, | [F,A,]4z4|
+[E,B,]4E,G,A,B, | [F,A,]4z4| [E,B,]8| A,8| z2^A,2B,2G,2| E,4z4 |
+F,8| z8 | z4F,2A,2| [E,G,]4z4| [E,B,]8| [F,A,]8|
+z8| z8 | z8| z8 | z4G,4| A,4z4|
+z4G,2F,2| E4F4| G4z4| A,4z4 | F4G,2F,2| E,4F,4|
+E,4z4| A,4 z4| z4 G,2F,2| E,4F,2G,2| C,8|

@@ -13,6 +13,10 @@
             "file": "Star-Wars-Main-Theme.txt"
         },
         {
+            "titulo": "InterInterstellar",
+            "file": "Interstellar.txt"
+        },
+        {
             "titulo": "La marcha de los santos",
             "file": "La-marcha-de-los-santos.txt"
         },
@@ -86,6 +90,14 @@
         {
             "titulo": "El Fantasma de la ópera",
             "file": "El-fantasma-de-la-opera.txt"
+        },       
+        {
+            "titulo": "Women of Ireland",
+            "file": "Women-of-Ireland.txt"
+        },       
+        {
+            "titulo": "El Bueno, el Feo y el Malo ",
+            "file": "BuenoFeoYMalo.txt"
         },       
         {
             "titulo": "ABC",

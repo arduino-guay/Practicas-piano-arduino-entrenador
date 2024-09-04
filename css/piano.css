@@ -102,3 +102,11 @@ svg .abcjs-p3,
     stroke: darkcyan !important;
 
 }
+
+@media print {
+    h1, p, textarea, #keyboard, #Izqda, #audio, #warnings, hr {
+        display: none;
+    }
+}
+
+@page { size: auto;  margin: 0mm; }
