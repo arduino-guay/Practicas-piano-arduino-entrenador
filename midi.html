@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>WebMidi.js Quick Start</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js"></script>
+
+    <script type="module">
+
+        var salida = '';
+        var notas = 0;
+        var tempo = 0;
+
+        // Enable WebMidi.js and trigger the onEnabled() function when ready.
+        WebMidi
+            .enable()
+            .then(onEnabled)
+            .catch(err => alert(err));
+
+        function onEnabled() {
+
+            if (WebMidi.inputs.length < 1) {
+                document.body.innerHTML += "No device detected.";
+            } else {
+                WebMidi.inputs.forEach((device, index) => {
+                    document.body.innerHTML += `${index}: ${device.name} <br>`;
+                });
+            }
+
+            //const myInput = WebMidi.getInputByName("LKMK3 MIDI");
+            const myInput = WebMidi.inputs[0];
+            myInput.addListener("noteon", e => {
+                let tiempo = Math.round(e.timestamp-tempo);
+                console.log(tiempo);
+                tempo = e.timestamp;
+                let nota = e.note.accidental == '#' ? '^' + e.note.name: e.note.name; 
+                switch (e.note.octave) {
+                        case 2:
+                        nota = nota + ',,';
+                        break;
+                        case 3:
+                        nota = nota + ',';
+                        break;
+                        case 5:
+                        nota = nota.toLowerCase();
+                        break;
+                        case 6:
+                        nota = nota.toLowerCase() + "'";
+                        break;
+                    default:
+                        break;
+                }
+                if (tiempo < 500)
+                {
+                    salida += nota + '/';
+                    notas++;
+                } else
+                {
+                    salida += nota + ' ';
+                    notas += 2;
+                }
+                if ( notas >= 8 )
+                {
+                    salida += ' | ';
+                    notas = 0;  
+                }    
+                console.log(salida);
+            }
+            );
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>WebMidi.js Quick Start</h1>
+</body>
+
+</html>

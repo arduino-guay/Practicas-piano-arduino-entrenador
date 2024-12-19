@@ -1,0 +1,18 @@
+X:1
+T:ABC
+Q: 90
+L:1/4
+V: Der clef=treble
+G, A, B, C D E F G A B | 
+w: Sol La Si Do Re Mi Fa Sol La Si
+c d e f g a b c' d' e' |
+w: Do Re Mi Fa Sol La Si Do Re Mi
+z4
+V: Izq clef=bass
+G,,, A,,, B,,, C,, D,, E,, F,, G,, A,, B,, | 
+w: Sol La Si Do Re Mi Fa Sol La Si 
+C, D, E, F, G, A, B, C D F |
+w:Do Re Mi Fa Sol La Si Do Re Mi
+z4
+
+
