@@ -41,6 +41,10 @@
             "file": "piratas-del-caribe.txt"
         },
         {
+            "titulo": "Piratas del Caribe-ORG",
+            "file": "Piratas.org.txt"
+        },
+        {
             "titulo": "Marcha Nupcial",
             "file": "Marcha-Nupcial.txt"
         },
@@ -80,6 +84,9 @@
             "file": "La-Senda-del-tiempo.txt"
         },
         {
+            "titulo": "Hijo de la luna",
+            "file": "Hijo-de-la-luna.txt"
+        },        {
             "titulo": "Strawberry Fields Forever",
             "file": "Strawberry-Fields.txt"
         },       
@@ -94,6 +101,10 @@
         {
             "titulo": "Women of Ireland",
             "file": "Women-of-Ireland.txt"
+        },       
+        {
+            "titulo": "Venedik",
+            "file": "Venedik.txt"
         },       
         {
             "titulo": "El Bueno, el Feo y el Malo ",

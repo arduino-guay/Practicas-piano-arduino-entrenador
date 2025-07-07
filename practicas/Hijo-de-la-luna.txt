@@ -1,0 +1,25 @@
+X: 1
+T: Hijo de la luna
+C: Jose María Cano
+M: 3/4
+L: 1/4
+K: C
+Q:1/4=90
+V: Der clef=treble
+z A G | z E D | z F G | z E D |
+z A G | z E D | z F G | z E D | 
+z D/E/F/A/ | E2 D | z A _B | z A G |
+z D/E/F/A/ | E2 D | z A _B | z A G | 
+z F/G/A/c/ | A G2 | z D/E/F/A/ | E2 D | 
+_B,2 D | F E C | z A G | z E D |
+z F/G/A/c/ | A G2 | z D/E/F/A/ | E2 D | 
+_B,2 D | F E C | D3 |
+V: Izq clef=bass
+D,3 | D,3 | D,3 | D,3 | 
+D,3 | A,,3 | _B,,3 | A,,3 | 
+D,3 | G,,3 | D,3 | _D,3 |
+D,3 | G,,3 | D,3 | _D,3 | 
+F,,3 | E,,3 | D,3 | C,3 | 
+_B,,3 | C,3 | D,3 | D,3 |
+F,,3 | E,,3 | D,3 | C,3 | 
+_B,,3 | C,3 | D,3 |
