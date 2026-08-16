@@ -31,64 +31,92 @@ main {
     height: auto;
 }
 
-.abcjs-p-14,
-.abcjs-p-7,
-.abcjs-p0,
-.abcjs-p7,
-.abcjs-p14 {
+path:is( 
+    [data-name="clefs.G"], 
+    [data-name="clefs.F"],
+    [data-name="accidentals.sharp"],
+    [data-name="accidentals.flat"],
+    [data-name="accidentals.nat"],
+    [data-name="dots.dot"],     
+    [data-name="flags.u8th"],     
+    [data-name="flags.d8th"],     
+    [data-name="flags.u16th"],     
+    [data-name="flags.d16th"]     
+) 
+{
+    fill: black  !important;
+    stroke: none  !important;
+}
+
+path:is(
+  [data-name^="C"], [data-name^="c"],
+  [data-name^="_C"], [data-name^="_c"],
+  [data-name^="^C"], [data-name^="^c"],
+  [data-name^="=C"], [data-name^="=c"]
+) 
+{
     fill: rgb(168, 134, 90);
     stroke: rgb(168, 134, 90);
 }
 
-.abcjs-p-13,
-.abcjs-p-6,
-.abcjs-p1,
-.abcjs-p8,
-.abcjs-p15 {
+path:is(
+  [data-name^="D"], [data-name^="d"],
+  [data-name^="_D"], [data-name^="_d"],
+  [data-name^="^D"], [data-name^="^d"],
+  [data-name^="=D"], [data-name^="=d"]
+) 
+{
     fill: red;
+    stroke: red;
 }
 
-.abcjs-p-12,
-.abcjs-p-5,
-.abcjs-p2,
-.abcjs-p9,
-.abcjs-p16 {
+path:is(
+  [data-name^="E"], [data-name^="e"],
+  [data-name^="_E"], [data-name^="_e"],
+  [data-name^="^E"], [data-name^="^e"],
+  [data-name^="=E"], [data-name^="=e"]
+) 
+{
     fill: orange;
     stroke: rgb(214, 141, 5);
 }
 
-.abcjs-p-11,
-.abcjs-p-4,
-svg .abcjs-p3,
-.abcjs-p10,
-.abcjs-p17 {
+path:is(
+  [data-name^="F"], [data-name^="f"],
+  [data-name^="_F"], [data-name^="_f"],
+  [data-name^="^F"], [data-name^="^f"],
+  [data-name^="=F"], [data-name^="=f"]
+) {
     fill: yellow;
     stroke: rgb(221, 221, 6)
 }
 
-.abcjs-p-10,
-.abcjs-p-3,
-.abcjs-p4,
-.abcjs-p11,
-.abcjs-p18 {
+path:is(
+  [data-name^="G"], [data-name^="g"],
+  [data-name^="_G"], [data-name^="_g"],
+  [data-name^="^G"], [data-name^="^g"],
+  [data-name^="=G"], [data-name^="=g"]
+) {
     fill: greenyellow;
     stroke: rgb(145, 214, 41);
 }
 
-.abcjs-p-16,
-.abcjs-p-9,
-.abcjs-p-2,
-.abcjs-p5,
-.abcjs-p12 {
+path:is(
+  [data-name^="A"], [data-name^="a"],
+  [data-name^="_A"], [data-name^="_a"],
+  [data-name^="^A"], [data-name^="^a"],
+  [data-name^="=A"], [data-name^="=a"]
+) {
     fill: rgb(0, 140, 255);
     stroke: rgb(0, 140, 255);
 }
 
-.abcjs-p-15,
-.abcjs-p-8,
-.abcjs-p-1,
-.abcjs-p6,
-.abcjs-p13 {
+path:is(
+  [data-name^="B"], [data-name^="b"],
+  [data-name^="_B"], [data-name^="_b"],
+  [data-name^="^B"], [data-name^="^b"],
+  [data-name^="=B"], [data-name^="=b"]
+) {
     fill: violet;
     stroke: rgb(184, 102, 184);
 }

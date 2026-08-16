@@ -1,0 +1,20 @@
+X:1
+T:All Creatures Great And Small
+%%score { 1 | 2 }
+L:1/8
+Q:1/4=180
+M:4/4
+V: Der
+%%MIDI program 0
+K:Eb clef=treble
+[EG]2 EF G2 B2 | [EA]2 F2 [EA]2 c2 | [DB]2 [DG]2 [DB]4 | EC[CE]A [DB]4 |  [Bg]2 ef g2 [db]2 | [ca]2 f2 [ca]2 [ec']2 | [fd']2 [ge']2 [db]4 |
+z EFG AB c_d |  [ec']2 ga/ z/ [ec']2 [fd']2 | [fd']2 [ge']2 [db]4 | [ec']2 ga/ z/ [ec']2 [fd']2 | [fd'f']2 [ee']2 [B,B]4 |  G2 EF G2 E2 |
+G2 EF G2 =A2 | [DB]2 CE [ge']d'c'b | agfe dcBA |  [eg]2 ef g2 b2 | [ea]2 f2 [ea]2 c'2 | [db]2 [dg]2 [db]4 | [Gf]4 [ce]4 |
+[Q:1/4=120]"_dim." [Bg]2 ef [Bg]2 [db]2 |"_dim." [da]2 f2 [Af]2 [Fd]2 | [Ge]8 |]
+V: Izq
+K:Eb clef=bass
+%%MIDI program 1
+E,2 [G,B,]2 z2 [G,B,]2 | F,2 [A,C]2 z2 [A,C]2 | G,,2 G,2 z2 G,2 | E,2 A,2 z2 A,2 |  E,2 [G,B,]2 z2 [G,B,]2 | F,2 [A,C]2 z2 [A,C]2 | G,2 [B,D]2 z2 [B,D]2 |
+E,2 A,2 z2 A,2 |  A,,2 A,2 z2 A,2 | G,,2 G,2 z2 G,2 | A,,2 A,2 z2 A,2 | G,,2 G,2 z2 G,2 |  C,2 [G,B,]2 z2 [G,B,]2 |
+F,,2 [G,B,]2 z2 [G,B,]2 | B,,2 [F,A,]2 z2 [F,A,]2 | D,2 [F,A,]2 z z [F,A,]2 |  E,2 [G,B,]2 z2 [G,B,]2 | F,2 [A,C]2 z2 [A,C]2 | G,,2 G,2 z2 G,2 | B,,2 B,2 z2 B,2 |
+G,,2 [E,G,]2 z2 [E,G,]2 | F,,2 F,2 z2 F,2 | E,,8 |]

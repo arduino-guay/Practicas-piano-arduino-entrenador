@@ -2,7 +2,11 @@
     "Practicas": [
         {
             "titulo": "Tdas las criaturas grandes y pequeñas",
-            "file": "Todas-Las -Criaturas.txt"
+            "file": "Todas-Las-Criaturas.txt"
+        },
+        {
+            "titulo": "Tdas las criaturas grandes y pequeñas 2020",
+            "file": "Todas-Las-Criaturas-2020.txt"
         },
         {
             "titulo": "El lago de los cisnes",
