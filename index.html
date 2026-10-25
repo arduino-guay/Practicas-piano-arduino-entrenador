@@ -19,6 +19,102 @@
 	<script src="js/abcjs-basic-min.js" type="text/javascript"></script>
 	<script src="js/piano.js" type="text/javascript"></script>
 	<script src="js/teclado.js" type="text/javascript"></script>
+
+	<style>
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			overflow: hidden;
+		}
+
+		body {
+			padding-bottom: 0;
+		}
+
+		.container-fluid,
+		.container-fluid > .row {
+			height: 100%;
+		}
+
+		#Izqda {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+		}
+
+		#canciones {
+			flex: 1 1 auto;
+			min-height: 0;
+			overflow-y: auto;
+		}
+
+		#Dcha {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			overflow-x: auto;
+		}
+
+		#partitura {
+			flex: 1 1 auto;
+			min-height: 0;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+		}
+
+		#paper {
+			flex: 1 1 auto;
+			min-height: 0;
+			overflow: auto;
+		}
+
+		#keyboard {
+			flex: 0 0 auto;
+			margin: 0 auto;
+			height: 120px;
+		}
+
+		#paperPrint {
+			display: none;
+		}
+
+		@media print {
+			html,
+			body {
+				height: auto;
+				overflow: visible;
+				color: #000;
+				background: #fff;
+			}
+
+			body {
+				padding: 0;
+			}
+
+			.container-fluid {
+				display: none !important;
+			}
+
+			#paperPrint {
+				display: block;
+				width: 100%;
+				color: #000;
+			}
+
+			#paperPrint .abcjs-container {
+				page-break-inside: avoid;
+				break-inside: avoid;
+			}
+
+			@page {
+				size: auto;
+				margin: 15mm;
+			}
+		}
+	</style>
 </head>
 
 <body onload="load()">
@@ -27,46 +123,38 @@
 
 			<div id="Izqda" class="col-2">
 				<div>
-					<label for="canciones" class="form-label">Seleccionar canción</label>
-					<select class="form-select" id="canciones" onchange="cambiaCancion()">
-					</select>	
-				</div>
-				<br/>
-				<div>
 					<label for="metronomo" class="form-label">Metrónomo</label>
 					<select class="form-select" id="metronomo" onchange="cambiaCancion()">
-						<option value="">...</option>
+						<option value="" selected>...</option>
 						<option value="dd 76 77 127 100">2/4</option>
 						<option value="ddd 76 77 77 127 100 100">3/4</option>
-						<option value="dddd 76 77 77 77 127 100 100 100" selected>4/4</option>
+						<option value="dddd 76 77 77 77 127 100 100 100">4/4</option>
 						<option value="dddddd 76 77 77 77 77 77 127 100 100 100 100 100">6/4</option>
 						<option value="dd 76 77 127 50">6/8</option>
 					</select>	
 				</div>
-				<br/>
-				<div class="input-group">
-					<div class="input-group-text" id="manoIzq" style="width: 200px;">Mano izquierda</div>
-					<div class="input-group-text">
-						<input class="form-check-input" type="checkbox" value="" id="chkIzquierda" checked onchange="cambiaCancion()">
-					</div>
-				</div>
-				<div class="input-group">
-					<div class="input-group-text" id="manoDer" style="width: 200px;">Mano derecha</div>
+				<div class="input-group mt-3">
+					<div class="input-group-text" id="manoDer">Melodia</div>
 					<div class="input-group-text">
 						<input class="form-check-input" type="checkbox" value="" id="chkDerecha" checked onchange="cambiaCancion()">
+					</div>
+					<div class="input-group-text" id="manoIzq">Acompañam.</div>
+					<div class="input-group-text">
+						<input class="form-check-input" type="checkbox" value="" id="chkIzquierda" checked onchange="cambiaCancion()">
 					</div>
 				</div>
 				<div class="mt-2">
 					<label for="trasponer" class="form-label">Transponer semintonos: </label>
 					<input class="transpose-half-steps form-control" id="trasponer" type="number" min="-24" max="24" step="1" value="0" onchange="cambiaCancion()">
-				</div>	
+				</div>
+				<label for="canciones" class="form-label mt-3">Seleccionar canción</label>
+				<ul class="list-group list-group-flush" id="canciones"></ul>
 			</div>
 
-			<div class="col-10">
-				<div style="width: 1200px;margin-left: auto;margin-right: auto;">
+			<div class="col-10" id="Dcha">
+				<div id="partitura" style="width: 1200px;margin-left: auto;margin-right: auto;">
 					<div id="paper" ></div>
 					<div id="audio"></div>
-					<p class="beat"></p>
 				</div>
 				<div id="keyboard" class="keyboard-holder" style="width: 1200px;">
 				</div>
@@ -74,6 +162,8 @@
 
 		</div>
 	</div>
+
+	<div id="paperPrint"></div>
 </body>
 
 </html>

@@ -2,7 +2,7 @@ var hayMidi = false;
 var midiOut = [];
 var chkDer, chkIzq;
 var timer;
-var metronomo = "dddd 76 77 77 77 127 100 100 100";
+var metronomo = "";
 var trasponerSeminTonos;
 
 function connect() {
@@ -101,6 +101,7 @@ function CursorControl() {
         t0 = Date.now();
     };
 
+    /*
     self.onBeat = function (beatNumber, totalBeats, totalTime) {
         //console.log('(' + (Date.now() - t0) + ') : ' + beatNumber );
         t0 = Date.now();
@@ -109,7 +110,7 @@ function CursorControl() {
         self.beatDiv.innerText = "Beat: " + beatNumber + " Total: " + totalBeats + " Total time: " + totalTime;
         //ABCJS.synth.playEvent([{"cmd":"note","pitch":76+beatNumber%4,"volume":105,"start":0,"duration":0.125,"instrument":10,"gap":0}]);
     };
-
+   */
     self.onEvent = function (ev) {
         //console.log(ev);
         if (ev.midiPitches && ev.midiPitches[0]) {
@@ -135,7 +136,7 @@ function CursorControl() {
             cursor.setAttribute("x2", ev.left - 2);
             cursor.setAttribute("y1", ev.top);
             cursor.setAttribute("y2", ev.top + ev.height);
-            //document.querySelector("#paper").scrollTo(0, ev.top - 100);
+            mantenerCursorVisible(cursor);
         }
     };
 
@@ -158,6 +159,29 @@ function CursorControl() {
     };
 }
 
+function mantenerCursorVisible(cursor) {
+    var paper = document.querySelector("#paper");
+    if (!paper || !cursor) {
+        return;
+    }
+
+    var paperRect = paper.getBoundingClientRect();
+    var cursorRect = cursor.getBoundingClientRect();
+    var margen = 20;
+
+    if (cursorRect.top < paperRect.top) {
+        paper.scrollTop += cursorRect.top - paperRect.top - margen;
+    } else if (cursorRect.bottom > paperRect.bottom) {
+        paper.scrollTop += cursorRect.bottom - paperRect.bottom + margen;
+    }
+
+    if (cursorRect.left < paperRect.left) {
+        paper.scrollLeft += cursorRect.left - paperRect.left - margen;
+    } else if (cursorRect.right > paperRect.right) {
+        paper.scrollLeft += cursorRect.right - paperRect.right + margen;
+    }
+}
+
 var cursorControl = new CursorControl();
 
 var abc = [];
@@ -165,6 +189,7 @@ var tuneNames = ["Cooleys", "Bill Bailey", "All Notes On Piano"];
 var canciones;
 var currentTune = 0;
 var cancion;
+var cancionActual = '';
 
 var synthControl;
 
@@ -201,6 +226,18 @@ var abcOptions = {
     viewportVertical: true,
     staffwidth: 1200,
     scale: 1,
+    visualTranspose: trasponerSeminTonos
+};
+
+var abcOptionsPrint = {
+    add_classes: true,
+    responsive: "resize",
+    oneSvgPerLine: true,
+    staffwidth: 500,
+    paddingtop: 10,
+    paddingbottom: 10,
+    paddingleft: 30,
+    paddingright: 30,
     visualTranspose: trasponerSeminTonos
 };
 
@@ -254,7 +291,7 @@ function setTune(userAction, abcText) {
         abcText = tmp[0] + compases(tmp[1], 8) + tmp[2] + compases(tmp[3], 8);
     }
     let partes = abcText.split('V:');
-    cancion = partes[0];
+    cancion = partes[0] + '%%barnumbers 1\n';
     if (chkDer.checked) {
         cancion += 'V:' + partes[1];
     }
@@ -264,7 +301,12 @@ function setTune(userAction, abcText) {
 
     //synthControl.disable(true);
     abcOptions.visualTranspose = trasponerSeminTonos;
-    var visualObj = ABCJS.renderAbc("paper", cancion, abcOptions)[0];
+    abcOptionsPrint.visualTranspose = trasponerSeminTonos;
+
+    var abcPantalla = cancion.replace(/%%staffwidth[^\n]*\n?/g, '');
+    var visualObj = ABCJS.renderAbc("paper", abcPantalla, abcOptions)[0];
+    ABCJS.renderAbc("paperPrint", cancion, abcOptionsPrint);
+
     timer.setMsMedida(visualObj.millisecondsPerMeasure());
     // TODO-PER: This will allow the callback function to have access to timing info - this should be incorporated into the render at some point.
     var midiBuffer = new ABCJS.synth.CreateSynth();
@@ -305,17 +347,36 @@ function setTune(userAction, abcText) {
 function cargaCombo() {
     var ele = document.getElementById('canciones');
     canciones.forEach(function (b) {
-        ele.innerHTML += '<option value="' + b.file + '">' + b.titulo + '</option>';
-    })
+        var li = document.createElement('li');
+        li.className = 'list-group-item list-group-item-action';
+        li.dataset.file = b.file;
+        li.textContent = b.titulo;
+        li.addEventListener('click', function () {
+            seleccionarCancion(b.file, li);
+        });
+        ele.appendChild(li);
+    });
+}
+
+function seleccionarCancion(file, li) {
+    cancionActual = file;
+    var activo = document.querySelector('#canciones .active');
+    if (activo) {
+        activo.classList.remove('active');
+    }
+    li.classList.add('active');
+    cambiaCancion();
 }
 
 function cambiaCancion() {
     var met = document.getElementById('metronomo');
     metronomo = met.value;
-    var ele = document.getElementById('canciones');
     trasponerSeminTonos = document.getElementById("trasponer").value;
-    document.title = ele.value.substring(0, ele.value.length-4);
-    cargaPractica(ele.value);
+    if (!cancionActual) {
+        return;
+    }
+    document.title = cancionActual.substring(0, cancionActual.length - 4);
+    cargaPractica(cancionActual);
 }
 
 function cargaTitulos() {
@@ -324,7 +385,7 @@ function cargaTitulos() {
         .then(jsonResponse => {
             canciones = jsonResponse.Practicas;
             cargaCombo();
-            cargaPractica(canciones[0].file);
+            seleccionarCancion(canciones[0].file, document.querySelector('#canciones li'));
         });
 }
 

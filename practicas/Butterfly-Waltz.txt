@@ -1,0 +1,51 @@
+X:1
+T:Butterfly Waltz
+C:Brian Crain
+L:1/8
+M:3/4
+Q:1/4=100
+K:F
+V: Der clef=treble
+AB       | c4 FE    | F4 c2     | c3 d BA  |
+B4 AB    | c4 FE    | F4 A2     |  D6      | 
+E4 AB    | c4 FE    | F4 c2     | c3 d BA  |  
+B4 AB    | c3 f ef  | c3 f ef   | c6       |  
+d4 de    | f3 e ge  | f3 e ge   | f2 e2 d2 |
+G3 G AG  | F3 G Ad  | c2 A2 FA  | G6-      |  
+G4 FE    | F6       | D3 =B, GF | E2 F2 G2 |  
+C4 FE    | F2 G2 A2 | A2 G3 F   | G6       |  
+C4 F     | F6       | D3 =B, GF | E2 F2 G2 | 
+C3 C FE  | F2 G2 A2 | A2 =B3 c  | c4 G2    | 
+z4 z G   | G2 A2 B2 | B4 z c    | c2 d2 e2 |  
+e4 fe    | f6       | d3 =B gf  | e2 f2 g2 | 
+c3 c fe  | f2 g2 a2 | a2 g3 f   | g6       |  
+c4 fe    | f6       | d3 =B gf  | e2 f2 g2 |  
+c3 c fe  | f2 g2 a2 | a2 =b3 c' | c'4 g2-  | 
+g4 z g   | g2 a2 b2 | b2 a2 g2- | g4 AB    |  
+c4 FE    | F4 c2    | c3 d BA   | B4 AB    |  
+c4 FE    | F4 A2    |  D6       | E4 AB    |  
+c4 FE    | F4 c2    | c3 d BA   | B4 AB    |  
+c3 f ef  | c3 f ef  | c6        | d4 z e   |
+f6       | z6       | F6        | f6       |
+V: Izq clef=bass
+z2           | F,,2 C,2 F,2 | A,,2 E,2 A,2 | B,,2 F,2 B,2 |
+C,2 G,2 C2   | F,,2 C,2 F,2 | A,,2 E,2 A,2 | B,,2 F,2 B,2 | 
+C,2 G,2 C2   | F,,2 C,2 F,2 | A,,2 E,2 A,2 | B,,2 F,2 B,2 |
+C,2 G,2 C2   | F,,2 C,2 F,2 | A,,2 E,2 A,2 | B,,2 F,2 B,2 | 
+C,2 G,2 C2   | D,2 A,2 D2   | B,,2 F,2 B,2 | F,,2 C,2 F,2 | 
+C,2 G,2 C2   | D,2 A,2 D2   | B,,2 F,2 B,2 | C,2 G,2 C2   |  
+C,2 G,2 C2   | D,2 A,2 D2   | G,,2 D,2 G,2 | C,2 G,2 C2   | 
+F,,2 C,2 F,2 | D,2 A,2 D2   | G,,2 D,2 G,2 | C,2 G,2 C2   | 
+C,2 G,2 C2   | D,2 A,2 D2   | G,,2 D,2 G,2 | C,2 G,2 C2   | 
+F,,2 C,2 F,2 | D,2 A,2 D2   | G,,2 D,2 G,2 | C,2 G,2 C2   | 
+C,2 G,2 C2   | C,2 G,2 C2   | C,2 G,2 C2   | C,2 G,2 C2   | 
+C,2 G,4      | D2 A2 d2     | G,2 D2 G2    | C2 G2 c2     |
+F,2 C2 F2    | D2 A2 d2     |   G,2 D2 G2  | C2 G2 c2     |
+C2 G2 c2     | D2 A2 d2     | G,2 D2 G2    | C2 G2 c2     |  
+F,2 C2 F2    | D2 A2 d2     | G,2 D2 G2    | C2 G2 c2     |
+C2 G2 c2     | C2 G2 c2     | C2 G2 c2     | C2 G4        | 
+F,,2 C,2 F,2 | A,,2 E,2 A,2 | B,,2 F,2 B,2 | C,2 G,2 C2   | 
+F,,2 C,2 F,2 | A,,2 E,2 A,2 | B,,2 F,2 B,2 | C,2 G,2 C2   | 
+F,,2 C,2 F,2 | A,,2 E,2 A,2 | B,,2 F,2 B,2 | C,2 G,2 C2   | 
+F,,2 C,2 F,2 | A,,2 E,2 A,2 | B,,2 F,2 B,2 | C,2 G,2 C2   | 
+F,,2 C,2 F,2 | G,2 A,2 C2   | z6           | z6           |

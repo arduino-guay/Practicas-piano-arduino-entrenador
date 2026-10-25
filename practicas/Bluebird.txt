@@ -1,0 +1,66 @@
+X:1
+T:Bluebird
+C:Alexis Ffrench
+Z:(arr. Angeline Zavier)
+L:1/8
+M:3/4
+Q:1/4=160
+K:C
+V: Der clef=treble
+z2 ed ec                    | B6-                         | B2 e g3-                    | g6                          | z2 ed ec                    | B6-                         |
+B2 e g3-                    | g6                          | A6-                         | A2 AB cf                    | e6                          | d6                          |
+A6-                         | A2 AB cf                    | e6                          | d6                          | z2 de de                    | fg fg ac'                   |
+a6                          | e6                          | z2 de de                    | fg fg ac'                   | a6-                         | a4 gf                       |
+g6-                         | g4 fe                       | g6-                         | g4 fe                       | fe d4-                      | d4- de                      |
+fe d4-                      | d4- de                      | c2 ed ec                    | B6-                         | B2 e g3-                    | g6                          |
+z2 ed ec                    | B6-                         | B2 e g3-                    | g6                          | A6-                         | A2 AB cf                    |
+e6                          | d6                          | A6-                         | A2 AB cf                    | e6                          | d6                          |
+z2 de de                    | fg fg ac'                   | a6                          | e6                          | z2 de de                    | fg fg ac'                   |
+a6-                         | a4 gf                       | g6-                         | g4 fe                       | g6-                         | g4 fe                       |
+fe d4-                      | d4- de                      | fe d4-                      | d4- dg                      | e6-                         | e4 dc                       |
+e6-                         | e4 dc                       | e6-                         | e4 dc                       | d6-                         | d4 cB                       |
+cg eg eg                    | cg eg eg                    | Bg eg eg                    | Bg eg eg                    | cg eg eg                    | cg eg eg                    |
+Bg eg eg                    | Bg eg eg                    | A6-                         | A2 AB cf                    | e6                          | d6                          |
+A6-                         | A2 AB cf                    | e6                          | d6                          | z2 [fa][eg] [df][ce]        | [df][ce] [df][eg] [fa][ac'] |
+[fa]6                       | e6                          | z2 [df][ce] [df][eg]        | [df][eg] [df][eg] [fa][ac'] | a6-                         | a4 gf                       |
+g6-                         | g4 fe                       | g6-                         | g4 fe                       | fe d4-                      | d4- de                      |
+fe d4-                      | d4- dg                      | e6-                         | e4 dc                       | e6-                         | e4 dc                       |
+e6-                         | e4 dc                       | d6-                         | d4 cB                       | cg eg eg                    | cg eg eg                    |
+Bg eg eg                    | Bg eg eg                    | cg eg eg                    | cg eg eg                    | Bg eg eg                    | Bg eg eg                    |
+A6-                         | A2 AB cf                    | e6                          | d6                          | A6-                         | A2 ag fc                    |
+e6                          | d6                          | z2 de de                    | fg fg ac'                   | a6                          | e6                          |
+z2 de de                    | fg fg ac'                   | a6-                         | a4 gf                       | g6-                         | g4 fe                       |
+g6-                         | g4 fe                       | fe d4-                      | d4- de                      | fe d4-                      | d4- dg                      |
+e6-                         | e4 dc                       | e6-                         | e4 dc                       | e6-                         | e4 dc                       |
+d6-                         | d4 cB                       | c2 ed ec                    | B6-                         | B2 e g3-                    | g6                          |
+z2 ed ec                    | B6-                         | B2 e g3-                    | g6                          | [Q:1/4=80] z2 ed ec         | B6-                         |
+B6                          |]
+V: Izq clef=bass
+!ped! C2 [EG]2 [EG]2        | B,2 [EG]2 [EG]2             | E2 [B,G]2 [B,G]2            | E2 [B,G]2 [B,G]2            | C2 [EG]2 [EG]2              | B,2 [EG]2 [EG]2             |
+E2 [B,G]2 [B,G]2            | E2 [B,G]2 [B,G]2            | F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           | C,2 [CE]2 [CE]2             | G,2 [B,D]2 [B,D]2           |
+F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           | C,2 [CE]2 [CE]2             | G,2 [B,D]2 [B,D]2           | D2 [FA]2 [FA]2              | D2 [FA]2 [FA]2              |
+A,2 [CE]2 [CE]2             | A,2 [CE]2 [CE]2             | D2 [FA]2 [FA]2              | D2 [FA]2 [FA]2              | F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           |
+C2 [EG]2 [EG]2              | C2 [EG]2 [EG]2              | _B,2 [DG]2 [DG]2            | _B,2 [DG]2 [DG]2            | A,2 [DF]2 [DF]2             | A,2 [DF]2 [DF]2             |
+^G,2 [DF]2 [DF]2            | G,2 [DF]2 [G,B,]2           | C2 [EG]2 [EG]2              | B,2 [EG]2 [EG]2             | E2 [B,G]2 [B,G]2            | E2 [B,G]2 [B,G]2            |
+C2 [EG]2 [EG]2              | B,2 [EG]2 [EG]2             | E2 [B,G]2 [B,G]2            | E2 [B,G]2 [B,G]2            | F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           |
+C,2 [CE]2 [CE]2             | G,2 [B,D]2 [B,D]2           | F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           | C,2 [CE]2 [CE]2             | G,2 [B,D]2 [B,D]2           |
+D2 [FA]2 [FA]2              | D2 [FA]2 [FA]2              | A,2 [CE]2 [CE]2             | A,2 [CE]2 [CE]2             | D2 [FA]2 [FA]2              | D2 [FA]2 [FA]2              |
+F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           | C2 [EG]2 [EG]2              | C2 [EG]2 [EG]2              | _B,2 [DG]2 [DG]2            | _B,2 [DG]2 [DG]2            |
+A,2 [DF]2 [DF]2             | A,2 [DF]2 [DF]2             | ^G,2 [DF]2 [DF]2            | ^G,2 [DF]2 [DF]2            | G,2 [CE]2 [CE]2             | G,2 [CE]2 [CE]2             |
+^F,2 [CE]2 [CE]2            | ^F,2 [CE]2 [CE]2            | F,2 [CE]2 [CE]2             | F,2 [CE]2 [CE]2             | G,2 [B,D]2 [B,D]2           | G,2 [B,D]2 [B,D]2           |
+C2 [EG]2 [EG]2              | C2 [EG]2 [EG]2              | B,2 [EG]2 [EG]2             | B,2 [EG]2 [EG]2             | C2 [EG]2 [EG]2              | C2 [EG]2 [EG]2              |
+B,2 [EG]2 [EG]2             | B,2 [EG]2 [EG]2             | F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           | C,2 [CE]2 [CE]2             | G,2 [B,D]2 [B,D]2           |
+F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           | C,2 [CE]2 [CE]2             | G,2 [B,D]2 [B,D]2           | D2 [FA]2 [FA]2              | D2 [FA]2 [FA]2              |
+A,2 [CE]2 [CE]2             | A,2 [CE]2 [CE]2             | D2 [FA]2 [FA]2              | D2 [FA]2 [FA]2              | F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           |
+C2 [EG]2 [EG]2              | C2 [EG]2 [EG]2              | _B,2 [DG]2 [DG]2            | _B,2 [DG]2 [DG]2            | A,2 [DF]2 [DF]2             | A,2 [DF]2 [DF]2             |
+^G,2 [DF]2 [DF]2            | ^G,2 [DF]2 [DF]2            | G,2 [CE]2 [CE]2             | G,2 [CE]2 [CE]2             | ^F,2 [CE]2 [CE]2            | ^F,2 [CE]2 [CE]2            |
+F,2 [CE]2 [CE]2             | F,2 [CE]2 [CE]2             | G,2 [B,D]2 [B,D]2           | G,2 [B,D]2 [B,D]2           | C2 [EG]2 [EG]2              | C2 [EG]2 [EG]2              |
+B,2 [EG]2 [EG]2             | B,2 [EG]2 [EG]2             | C2 [EG]2 [EG]2              | C2 [EG]2 [EG]2              | B,2 [EG]2 [EG]2             | B,2 [EG]2 [EG]2             |
+F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           | C,2 [CE]2 [CE]2             | G,2 [B,D]2 [B,D]2           | F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           |
+C,2 [CE]2 [CE]2             | G,2 [B,D]2 [B,D]2           | D2 [FA]2 [FA]2              | D2 [FA]2 [FA]2              | A,2 [CE]2 [CE]2             | A,2 [CE]2 [CE]2             |
+D2 [FA]2 [FA]2              | D2 [FA]2 [FA]2              | F,2 [A,C]2 [A,C]2           | F,2 [A,C]2 [A,C]2           | C2 [EG]2 [EG]2              | C2 [EG]2 [EG]2              |
+_B,2 [DG]2 [DG]2            | _B,2 [DG]2 [DG]2            | A,2 [DF]2 [DF]2             | A,2 [DF]2 [DF]2             | ^G,2 [DF]2 [DF]2            | ^G,2 [DF]2 [DF]2            |
+G,2 [CE]2 [CE]2             | G,2 [CE]2 [CE]2             | ^F,2 [CE]2 [CE]2            | ^F,2 [CE]2 [CE]2            | F,2 [CE]2 [CE]2             | F,2 [CE]2 [CE]2             |
+G,2 [B,D]2 [B,D]2           | G,2 [B,D]2 [B,D]2           | C2 [EG]2 [EG]2              | B,2 [EG]2 [EG]2             | E2 [B,G]2 [B,G]2            | E2 [B,G]2 [B,G]2            |
+C2 [EG]2 [EG]2              | B,2 [EG]2 [EG]2             | E2 [B,G]2 [B,G]2            | E2 [B,G]2 [B,G]2            | C2 !fermata![EG]4           | z6                          |
+z6!ped-up!                  |]

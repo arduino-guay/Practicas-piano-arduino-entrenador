@@ -1,0 +1,38 @@
+X: 1
+T: Le Onde
+M: 3/4
+L: 1/4
+R: Ludovico Einaudi
+Q: 1/4=116
+V: Der stem=up
+K: D clef=treble
+F3 & d c A                |F3 & d c A        | D3 & B A G | [D3F] & z/ F,/ B,/C/ D/F/ |
+z/ F,/ B,/C/ D/F/         |F3 & d c A        | F3 & d c A | E3 & c d c |
+[D3B] & z/ F,/ B,/C/ D/F/  |z/ F,/ B,/C/ D/F/ | F3 & d c A | F3 & d c A | 
+D3 & B A G                |[D3F]-& z/ A,,/ D,/E,/ F,/D/  | [D3F] & z/ A,,/ D,/E,/ F,/D/| F3 & d c A |
+F3 & [dA] c A | E3 & c d c|[D3B] & z/ F,/ B,/C/ D/F/ | z/ F,/ B,/C/ D/F/|
+A3 & f e d |A3 & f e d    |A3 & f e d                | B3 & f g e       |
+A3 & f e d |G3 & e d c    |[d3F] & z/ F,/ B,/C/ D/F/ | z/ F,/ B,/C/ D/F/| 
+A3 & f e d |A3 & f e d    |A3 & f e d                | A3 & f g a       | 
+A3 & f e d |G3 & e d c    |[A3d] & z/ =C,/ =F,/G,/ A,/D/ | z/ F,/ B,/C/ D/F/|
+!f! F3 & d c A |F3 & d c A |D3 & B A G |[F3A]-& z/ A,,/ D,/E,/ F,/D/  | [F3A] & z/ A,,/ D,/E,/ F,/D/|
+F3 & d c A |F3 & [Ad] c A |D3 & B c d |[F3A]-& z/ A,,/ D,/E,/ F,/D/  | [F3A] & z/ A,,/ D,/E,/ F,/D/|
+F3 & d c A |F3 & d c A |D3 & B A G |[F3A]-& z/ A,,/ D,/E,/ F,/D/  | [F2A] [Af] |
+B3 & g f e |G3 & e d c    |[d3F] & z/ F,/ B,/C/ D/F/ | z/ D,/ G,/A,/ B,/D/ | B3 & g f e |
+G3 & e d c |[A3d] & z/ =C,/ =F,/G,/ A,/D/ | z/ D,/ G,/A,/ B,/D/| [F3d]-& z/ A,,/ D,/E,/ F,/D/- |!fermata![D3F] & D3 |
+V: Izq 
+K: D clef=bass
+B,,3       |B,,3        |G,,3        | B,,3 |
+B,,3       |G,,3        |G,,3        | A,,3 |
+B,,3       |B,,3        |B,,3        | D,3  |   
+G,,3       |D,,3        |D,,3        | B,,3 |
+F,,3       |A,,3        |B,,3        | B,,3 |
+D,3        |A,,3        |B,,3        | G,,3 | 
+A,,3       |A,,3        |B,,3        | G,,3 | 
+D,3        |A,,3        |B,,3        | G,,3 | 
+D,3        |A,,3        |=F,,3       | G,,3 | 
+D,,3       |B,,3        |G,,3        | D,,3 | D,,3 |
+B,,3       |F,,3        |G,,3        | D,,3 | D,,3 |
+D,,3       |B,,3        |G,,3        | D,,3 | D,,3 & z/ A,,/ D,2|
+G,,3       |A,,3        |B,,3        | G,,3 | E,,3 |
+A,,3       |=F,,3       |G,,3        | D,,3-| !fermata! D,,3 |
