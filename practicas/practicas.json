@@ -21,6 +21,10 @@
             "file": "Butterfly-Waltz.txt"
         },
         {
+            "titulo": "The music of the night",
+            "file": "The-Music-of-the-Night.txt"
+        },
+        {
             "titulo": "Bluebird",
             "file": "Bluebird.txt"
         },
@@ -55,6 +59,10 @@
         {
             "titulo": "Bella y bestia son",
             "file": "bella-y-bestia-son.txt"
+        },
+        {
+            "titulo": "Bella y bestia son 2",
+            "file": "bella-y-bestia-son-2.txt"
         },
         {
             "titulo": "Piratas del Caribe",

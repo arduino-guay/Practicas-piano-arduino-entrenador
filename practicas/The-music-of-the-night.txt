@@ -1,0 +1,141 @@
+X:1
+T:The Music of the Night
+L:1/8
+Q:1/4=94
+M:4/4
+K:C
+V:1 treble nm="Piano" snm="Pno."
+"C""^Andante"!mp! (E2 G,2 "G/C" D2 G,2 | "C" CDEF "G/C" [B,D]2 G2) | "C" (E2 G,2 "G/C" [B,D]2 G,2 |
+"F/C" CDEF "G" [B,D]2 G2) |
+w: Night time shar- pens,|height- ens each sen- sat- ion;|dark- ness stirs and|wakes i- mag- i- na- tion.|
+w: ||||
+"F" (Accc "C" [Ed]2 cB | "F" Accc "C" [Ed]2 c2) |
+"F/C" (Accc "Bb" dc "F/C"AE |[M:2/4] "C/G""_rall."[Q:1/4=91] [CG]4) |
+w: Si- lent- ly the sen- ses a-|ban- don their de- fen- ces.|||
+w: ||||
+[M:4/4] "G7"[Q:1/4=88] D4[Q:1/4=86] [B,E]4 |: "C""_a tempo"[Q:1/4=94] (E2 G,2 "G/C" D2 G,2 | "C" CDEF "G/C" [B,D]2 G2) |
+"C" (E2 G,2 "G/C" [B,D]2 G,2 |
+w: |Slow- ly, gent- ly,|night un- furls its splen- dor;|grasp it, sense it,|
+w: |Soft- ly, deft- ly,|mus- ic shal ca- ress you.|Hear it, feel it,|
+"F" CDEF "G" [B,D]2 G2) |
+"F" (Accc "C/E" d2 cB | "F" Accc "C/E" d2 cB |
+"F" Accc "Bb" [Fd]c "F"AE |
+w: trem- u- lous and ten- der.|Turn your face a- way from the|gar- ish light of day, turn your|thoughts a- way from cold, un- feel- ing|
+w: se- cret- ly pos- ess you,|O- pen up your mind, let your|fan- tas- ies un- wind in this|dark- ness which you know you can- not|
+[M:2/4] "C/G" [EG]2) z (E |
+[M:4/4] "F" EDDE "G" FGED | "C/E" C4) z2 (EG ||
+[K:Bb] "Bb/F" d2 cB AGFG |
+w: light and|lis- ten to the mus- ic of the|night. Close your|eyes and sur- ren- der to your|
+w: fight, the|dark- ness of the mu- sic of the|night. Let your|mind start a jour- ney through a|
+"Eb" G2 F2 E2 GB |
+"Ab/Eb" e2 dc cBB=A) | "D7" [^FA]4 z2 dd ||
+[K:C] "G" d2 cB "G7/F" AGAG |
+w: dark- est dreams! Purge your|thoughts of the life you knew be-|fore! Close your|eyes, let your spi- rit start to|
+w: strange new world; leave all|thoughts of the world you knew be|fore. Let your|soul take you where you long to|
+"C/E" g4- !fermata!g z BB |1 "Em" B2 BB "B/D#" BABc |
+"E" [^GB]6 z2 :|2 "Em" B2 B2 "B/D#" BABc ||
+w: soar _ and you'll|live as you've nev- er lived be-|fore.|* can you be- long to|
+w: be! _ On- ly||||
+"E" [^GB]6 z2 |
+"C" (e2 =G2) "G/C" (d2 G2) | "C" (cdef "G/C" d2 [dg]2) | "C" (e2 G2) "G/C" (d2 G2) |
+w: me.|Float- ing, fall- ing,|sweet in- tox- i- ca- tion.|Touch me, trust me,|
+w: ||||
+"C" (cdef "G/C" d2 [dg]2) | "F" Accc "C/E" d2 cB |
+"F" Accc "C/E" d2 cB | "F" Accc "Bb" [Fd]c "F"AE |
+w: sa- vor each sen sa- tion.|Let the dream be- gin, let your|dark- er side give in to the|pow- er of the mus- ic that I|
+w: ||||
+[M:2/4] "C/G" [EG]2 z E |
+[M:4/4] "G""_rit."[Q:1/4=91] ED[Q:1/4=89]DE F[Q:1/4=87]GED | "C"[Q:1/4=94]"_a tempo" e2 G2 "G/C" d2 G2 | "C" cdef "G/C" d2 g2 |
+w: write, the|pow- er of the mus- ic of the|night. * * *||
+w: ||||
+"C" e2 G2 "G/C" d2 G2 | "F" cdef "G/F" d2 g2 | "F" Accc "C/E" d2 cB |
+"F" Accc "C/E" d2"_rit."[Q:1/4=93] c[Q:1/4=92]B |
+w: ||||
+w: ||||
+"F" (Acc[Q:1/4=91]c "Bb" [Fd]c "F"AE |[M:2/4] "C/G" [EG]4) |
+[M:4/4] "G""_rit."!mp! ED[Q:1/4=90]DE[Q:1/4=88] FG[Q:1/4=86]ED | "C" z4 "Dm7/C"!p![Q:1/4=84] [Ad]4 |
+w: You a- lone can make my song take|flight,|help me make the mus- ic of the|night|
+w: ||||
+"E/C"[Q:1/4=83] [^Ge]4 "B/C"!p![Q:1/4=82] [B^d^f]4 | "C"[Q:1/4=80] [ce=g]8- |!pp! !fermata![ceg]8 |]
+w: |||
+w: |||
+V:2 treble
+x4 B,4 | x8 | x8 |
+x8 |
+w: ||||
+x8 | x8 |
+x8 |[M:2/4] x4 |
+w: ||||
+[M:4/4] x8 |: x8 | x8 |
+x8 |
+w: ||||
+x8 |
+x8 | x8 |
+x8 |
+w: ||||
+[M:2/4] x4 |
+[M:4/4] x8 | x8 ||
+[K:Bb] x8 |
+w: ||||
+x8 |
+x8 | x8 ||
+[K:C] x8 |
+w: ||||
+x8 |1 G4 x4 |
+x8 :|2 G4 x4 ||
+w: |||then|
+x8 |
+x8 | x8 | x8 |
+w: ||||
+x8 | x8 |
+x8 | x8 |
+w: ||||
+[M:2/4] x4 |
+[M:4/4] x8 | x8 | x8 |
+w: ||||
+x8 | x8 | x8 |
+x8 |
+w: ||||
+x8 |[M:2/4] x4 |
+[M:4/4] x8 | x8 |
+w: ||||
+x8 | x8 | x8 |]
+w: |||
+V:3 bass
+[C,,G,,]8 | [C,,G,,]8 | [C,,G,,]8 |
+[C,,F,,]4 G,,4 |  F,,4 C,,4 | F,,2 A,,2 C,4 |
+x4 F,4 |[M:2/4] [G,,E,]4 | [M:4/4] [G,,F,]8 |: C,8 | z2 G,6 |
+C,8 |  [F,A,]4 G,4 |
+[F,A,]4 [E,G,]4 | [F,A,]4 [E,G,]4 |
+[F,A,]4 _B,2 [F,C]2 | [M:2/4] [G,C]2 z2 |
+[M:4/4] [F,A,]4 [G,B,]4 | [E,G,]2!mp! [E,G,]2 [E,G,]2!mp! C2 ||
+[K:Bb] [F,B,]8 |  B,8 |
+[E,_A,]8 | D,2 ^F,2 =A,2 C2 ||
+[K:C] [G,B,]4 [F,B,]4 |  z2 G,2- x4 |1 [E,B,]4 [^D,B,]4 |
+[E,B,]6 z2 :|2 [E,B,]4 [^D,B,]4 ||  [E,B,]6 z2 |
+z E, G,2 z G, B,2 | z E, G,2 z G, B,2 | z E, G,2 z G, B,2 |
+z E, G,2 z G, B,2 | x2 x2 x4 |
+[F,A,]4 [E,G,]4 | [F,A,]4 _B,2 [F,C]2 | [M:2/4] [G,C]2 z2 |
+[M:4/4] B,8 | [C,C][E,G,][E,G,][E,G,] z [G,B,][G,B,][G,B,] | z [E,G,][E,G,][E,G,] z [G,B,][G,B,][G,B,] |
+z [E,G,][E,G,][E,G,] z [G,B,][G,B,][G,B,] | z [A,C][A,C][A,C] z [G,B,][G,B,][G,B,] | z [A,C][A,C][A,C] z [G,C][G,C][G,C] |
+z [A,C][A,C][A,C] z [G,C][G,C][G,C] |  [F,A,]4 _B,2 [F,C]2 |[M:2/4] [G,C]4 |
+[M:4/4] B,8 | C8- |  C8- | C8 | !fermata!C,,8 |]
+V:4 bass
+x8 | x8 | x8 |
+x8 |  x8 | x8 |
+[C,F,]4 _B,,2 C,2 |[M:2/4] x4 | [M:4/4] x8 |: x8 | C,8 |
+x8 |  x8 |
+x8 | x8 |
+x8 | [M:2/4] x4 |
+[M:4/4] x8 | x8 ||
+[K:Bb] x8 |  E,4 G,4 |
+x8 | x8 ||
+[K:C] x8 |  E,4- !fermata![E,G,C] z z2 |1 x8 |
+x8 :|2 x8 ||  x8 |
+(C,4 (C,4) | (C,4) (C,4) | (C,4) (C,4) |
+(C,4) (C,4) | [F,A,]4) [E,G,]4 |
+x8 | x8 | [M:2/4] x4 |
+[M:4/4] G,6 F,2 | x4 C,4 | C,4 C,4 |
+C,4 C,4 | F,4 F,4 | F,4 E,4 |
+F,4 E,4 |  x8 |[M:2/4] x4 |
+[M:4/4] G,6 F,2 | x8 |  x8 | x8 | x8 |]
